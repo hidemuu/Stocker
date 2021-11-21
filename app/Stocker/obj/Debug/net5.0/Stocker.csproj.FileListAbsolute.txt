@@ -1,0 +1,16 @@
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.exe
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.deps.json
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.runtimeconfig.json
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.runtimeconfig.dev.json
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\ref\Stocker.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\bin\Debug\net5.0\Stocker.pdb
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.csproj.AssemblyReference.cache
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.AssemblyInfoInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.AssemblyInfo.cs
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.csproj.CoreCompileInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\ref\Stocker.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.pdb
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker\obj\Debug\net5.0\Stocker.genruntimeconfig.cache

@@ -1,0 +1,153 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style x:Key="ExpanderStyle" TargetType="{x:Type Expander}">
+        <Setter Property="HeaderTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding RelativeSource={RelativeSource AncestorType=Expander}, Path=Header}"
+                                Width="{Binding RelativeSource={RelativeSource AncestorType=Expander}, Path=ActualWidth}"
+                                FlowDirection="LeftToRight">
+                        </TextBlock>
+                        <ToolBar Grid.Column="1"></ToolBar>
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <!-- DataGrid -->
+    <Style x:Key="dataGridViewStyle" TargetType="DataGrid">
+        <Setter Property="RowHeaderWidth" Value="0"/>
+        <Setter Property="RowHeight" Value="40"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="#FFD6EFF7"/>
+        <Setter Property="VerticalGridLinesBrush"   Value="#FFE4E4BD"/>
+        <Setter Property="AlternatingRowBackground" Value="#FFD6EFF7"/>
+        <Setter Property="BorderBrush" Value="#FFD7E4F2"/>
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="CellStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridCell">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#FF3399FF" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- TextBox -->
+    <Style x:Key="TextBoxStyle" TargetType="TextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ProgresBar -->
+    <Style x:Key="ProgressBarStyle" TargetType="ProgressBar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ProgressBar">
+                    <ProgressBar 
+                        HorizontalContentAlignment="Center" 
+                        VerticalContentAlignment="Center"
+                        Value="{TemplateBinding Value}">
+                    </ProgressBar>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ComboBox -->
+    <Style x:Key="ComboBoxStyle" TargetType="ComboBox">
+        <Setter Property="Margin" Value="2,0"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" Margin="2.5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- GuideBar -->
+    <Style x:Key="GuideBarStyle" TargetType="Label">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Border Name="border" BorderThickness="0" BorderBrush="#707070" 
+                            Background="Black"
+                            CornerRadius="0" Margin="0">
+                        <StackPanel>
+                            <Label 
+                               Content="{TemplateBinding Content}" 
+                               Foreground="{TemplateBinding Foreground}">
+                            </Label>
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AccessButtonCloseStyle" TargetType="Button">
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Foreground" Value="{StaticResource AccessButtonForegroundBrushOFF}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Name="HoverButtonBorder" BorderThickness="2" CornerRadius="5"
+                                Margin="2"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="{TemplateBinding Background}">
+                        <TextBlock Text="{TemplateBinding Content}" 
+                                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <TextBlock.Background>
+                                <ImageBrush Stretch="Uniform" TileMode="None" 
+                                    ImageSource="/Images/power.png"/>
+                            </TextBlock.Background>
+                        </TextBlock>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!-- マウスオーバー -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="HoverButtonBorder" 
+                                        Property="BorderBrush" 
+                                        Value="{StaticResource AccessButtonBorderBrushHover}" />
+                            <Setter TargetName="HoverButtonBorder" 
+                                        Property="Background" 
+                                        Value="{StaticResource AccessButtonBackgroundBrushHover}" />
+                            <Setter Property="Foreground" 
+                                        Value="{StaticResource AccessButtonForegroundBrushHover}"/>
+                        </Trigger>
+                        <!--ボタンを押した時に、背景色を透過-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="HoverButtonBorder" 
+                                        Property="Background" 
+                                        Value="{StaticResource AccessButtonBackgroundBrushON}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
