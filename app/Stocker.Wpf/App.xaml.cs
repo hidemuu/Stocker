@@ -51,6 +51,7 @@ namespace Stocker.Wpf
             containerRegistry.RegisterForNavigation<ToolView>();
             containerRegistry.RegisterForNavigation<ExploreView>();
             containerRegistry.RegisterForNavigation<PropertyView>();
+            containerRegistry.RegisterForNavigation<NoSelectionView>();
 
             //Dialogの登録
             //containerRegistry.RegisterDialog<GameOverDialog, GameOverDialogViewModel>();
@@ -73,6 +74,7 @@ namespace Stocker.Wpf
             ViewModelLocationProvider.Register<ToolView, ToolViewModel>();
             ViewModelLocationProvider.Register<ExploreView, ExploreViewModel>();
             ViewModelLocationProvider.Register<PropertyView, PropertyViewModel>();
+            ViewModelLocationProvider.Register<NoSelectionView, NoSelectionViewModel>();
         }
 
         protected override IModuleCatalog CreateModuleCatalog()

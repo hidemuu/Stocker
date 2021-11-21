@@ -14,11 +14,13 @@
     Width="800"
     Height="600"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    Background="{DynamicResource MaterialDesignPaper}"
     FontFamily="{materialDesign:MaterialDesignFont}"
     GlowBrush="{DynamicResource AccentColorBrush}"
     ResizeMode="CanResizeWithGrip"
     TextElement.FontSize="11"
     TextElement.FontWeight="Medium"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto"
     WindowStartupLocation="CenterScreen"
@@ -27,7 +29,8 @@
     <metro:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!--<ResourceDictionary Source="/Stocker.WpfControls;component/Styles/NavigationRailStyles.xaml" />-->
+                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/NavigationRailStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </metro:MetroWindow.Resources>
@@ -43,14 +46,15 @@
     </i:Interaction.Triggers>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="70" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <TabControl
             Grid.Column="0"
             Padding="16"
             ItemsSource="{Binding Models}"
-            SelectedIndex="{Binding TabPage.Value}">
+            SelectedIndex="{Binding TabPage.Value}"
+            Style="{StaticResource NavigationRailControlStyleKey}">
             <TabControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -68,6 +72,7 @@
                             Grid.Row="1"
                             Margin="0,4,0,0"
                             HorizontalAlignment="Center"
+                            Style="{StaticResource MaterialDesignCaptionTextBlock}"
                             Text="{Binding Title.Value}" />
                     </Grid>
                 </DataTemplate>

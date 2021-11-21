@@ -6,7 +6,28 @@
              xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/LayoutStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
-            
+        <ToolBarTray>
+            <ToolBar>
+                <Button Command="Cut" ToolTip="Cut selection to Windows Clipboard.">
+                    <!--<Image Source="/WpfTutorialSamples;component/Images/cut.png" />-->
+                </Button>
+                <Button Command="Copy" ToolTip="Copy selection to Windows Clipboard.">
+                    <!--<Image Source="/WpfTutorialSamples;component/Images/copy.png" />-->
+                </Button>
+            </ToolBar>
+            <ToolBar>
+                <CheckBox Content="Test1" IsChecked="True" Style="{StaticResource CheckBoxStyle}"></CheckBox>
+                <CheckBox Content="Test2" IsChecked="True" Style="{StaticResource CheckBoxStyle}"></CheckBox>
+                <CheckBox Content="Test3" IsChecked="True" Style="{StaticResource CheckBoxStyle}"></CheckBox>
+            </ToolBar>
+        </ToolBarTray>
     </Grid>
 </UserControl>

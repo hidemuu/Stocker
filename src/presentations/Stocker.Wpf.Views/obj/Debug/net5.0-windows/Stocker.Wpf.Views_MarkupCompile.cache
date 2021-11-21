@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 
-51555729250
+6-1706616823
 
-5-2101924469
+62045571831
 207-1750973238
-MainWindow.xaml;Panels\ExploreView.xaml;Panels\MainView.xaml;Panels\PropertyView.xaml;Panels\ToolView.xaml;
+MainWindow.xaml;Panels\ExploreView.xaml;Panels\MainView.xaml;Panels\NoSelectionView.xaml;Panels\PropertyView.xaml;Panels\ToolView.xaml;
 
 False
 
