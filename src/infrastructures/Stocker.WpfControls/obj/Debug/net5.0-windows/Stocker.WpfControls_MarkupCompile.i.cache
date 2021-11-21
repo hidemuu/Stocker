@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 
-1-1503064665
+31248162533
 
 1154133475
 205-2041377453
-Styles\Styles.xaml;
+Styles\ColorStyles.xaml;Styles\LayoutStyles.xaml;Styles\NavigationRailStyles.xaml;
 
 False
 
