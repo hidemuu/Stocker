@@ -7,7 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
-    <ProjectReference Include="..\..\domains\Stocker.UiModels\Stocker.UiModels.csproj" />
+    <ProjectReference Include="..\..\domains\Stocker.SettingModels\Stocker.SettingModels.csproj" />
+    <ProjectReference Include="..\..\domains\Stocker.UiModels\Stocker.GuiModels.csproj" />
     <ProjectReference Include="..\..\infrastructures\Stocker.WpfControls\Stocker.WpfControls.csproj" />
   </ItemGroup>
 

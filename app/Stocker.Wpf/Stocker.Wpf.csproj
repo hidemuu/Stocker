@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Stocker.SettingRepository\Stocker.SettingRepository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Stocker.UiRepository\Stocker.GuiRepository.csproj" />
     <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.ViewModels\Stocker.Wpf.ViewModels.csproj" />
   </ItemGroup>
 

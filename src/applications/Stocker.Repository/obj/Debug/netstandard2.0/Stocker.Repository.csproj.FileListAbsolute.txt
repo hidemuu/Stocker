@@ -26,3 +26,5 @@ C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.csproj.CopyComplete
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Accessors.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Accessors.pdb

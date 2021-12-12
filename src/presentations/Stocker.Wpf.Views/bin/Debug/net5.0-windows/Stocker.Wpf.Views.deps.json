@@ -26,6 +26,14 @@
           }
         }
       },
+      "gong-wpf-dragdrop/3.0.0": {
+        "runtime": {
+          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.40"
+          }
+        }
+      },
       "LiveCharts.Wpf.NetCore3/0.9.7": {
         "dependencies": {
           "System.Data.DataSetExtensions": "4.5.0"
@@ -170,6 +178,14 @@
         }
       },
       "System.Text.Json/4.7.2": {},
+      "Stocker.GuiModels/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "Stocker.GuiModels.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -179,9 +195,12 @@
           "Stocker.Models.dll": {}
         }
       },
-      "Stocker.UiModels/1.0.0": {
+      "Stocker.SettingModels/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
-          "Stocker.UiModels.dll": {}
+          "Stocker.SettingModels.dll": {}
         }
       },
       "Stocker.Utilities/1.0.0": {
@@ -191,8 +210,9 @@
       },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
+          "Stocker.GuiModels": "1.0.0",
           "Stocker.Models": "1.0.0",
-          "Stocker.UiModels": "1.0.0",
+          "Stocker.SettingModels": "1.0.0",
           "Stocker.WpfControls": "1.0.0"
         },
         "runtime": {
@@ -207,7 +227,8 @@
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",
           "Prism.Wpf": "8.1.97",
-          "ReactiveProperty.WPF": "8.0.1"
+          "ReactiveProperty.WPF": "8.0.1",
+          "gong-wpf-dragdrop": "3.0.0"
         },
         "runtime": {
           "Stocker.WpfControls.dll": {}
@@ -227,6 +248,13 @@
       "sha512": "sha512-pZ5z4hYWwE4R13UMCVs6vII//nL7hz+Nwn4oJlnsZJRGqJNy6Z9KnJiTZfly6lKFu0pMc1aWBZpx+VqFTQKP1Q==",
       "path": "controlzex/4.4.0",
       "hashPath": "controlzex.4.4.0.nupkg.sha512"
+    },
+    "gong-wpf-dragdrop/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0qXxJ0gEJtDlC7fl19684wMuIfK+aA3Hj3Z1lGUEH/ZhmCnFpy0YNFy7IIyFM3SMr7hWdL3eRnG1oRm/j/Dgog==",
+      "path": "gong-wpf-dragdrop/3.0.0",
+      "hashPath": "gong-wpf-dragdrop.3.0.0.nupkg.sha512"
     },
     "LiveCharts.Wpf.NetCore3/0.9.7": {
       "type": "package",
@@ -340,12 +368,17 @@
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
     },
+    "Stocker.GuiModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Stocker.UiModels/1.0.0": {
+    "Stocker.SettingModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

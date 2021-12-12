@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="gong-wpf-dragdrop" Version="3.0.0" />
     <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
@@ -13,10 +14,6 @@
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.9" />
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
     <PackageReference Include="ReactiveProperty.WPF" Version="8.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controls\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using Prism.Mvvm;
 using Reactive.Bindings;
+using Stocker.GuiModels;
 using Stocker.Wpf.Models;
 using Stocker.Wpf.Models.Panels;
 using System;
@@ -12,11 +13,13 @@ namespace Stocker.Wpf.ViewModels.Panels
 {
     public class ExploreViewModel : BindableBase
     {
+
         public ReactiveCollection<TreeModel<ExploreModel>> Models { get; private set; } = new ReactiveCollection<TreeModel<ExploreModel>>();
 
 
-        public ExploreViewModel()
+        public ExploreViewModel(IGuiRepository guiRepository)
         {
+            var exploreTree = guiRepository.Explores.Get();
             MakeDemoModel();
         }
 
@@ -24,7 +27,7 @@ namespace Stocker.Wpf.ViewModels.Panels
         {
             Models.Add(new TreeModel<ExploreModel>
             {
-                Parent = new ExploreModel(0, "", "Test"),
+                Parent = new ExploreModel(0, "", "Root"),
                 Children = new List<TreeModel<ExploreModel>>
                 {
                     new TreeModel<ExploreModel>

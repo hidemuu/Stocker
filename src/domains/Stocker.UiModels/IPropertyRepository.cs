@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stocker.UiModels
+namespace Stocker.GuiModels
 {
     public interface IPropertyRepository
     {

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kAvqRCnWRx/iALTZF0NE7cqwmglsabq0SxTDr9k7zT/qb9IQlUqjO6qwJRr+4GMOajagx2Irw4BFe96J/sX94A==",
+  "dgSpecHash": "BjZJ8BfUWq+cIMHTlcMN86QmBFIE6xA9r4CzIZcJQ8k5OGHGzZXcoZ3PeVIEUArKL8+/OJ9NuaFeAMgmuZUzGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\nando\\.nuget\\packages\\gong-wpf-dragdrop\\3.0.0\\gong-wpf-dragdrop.3.0.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\livecharts.wpf.netcore3\\0.9.7\\livecharts.wpf.netcore3.0.9.7.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",

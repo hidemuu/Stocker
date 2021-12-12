@@ -1,4 +1,5 @@
-﻿using Stocker.UiModels;
+﻿using Stocker.GuiModels;
+using Stocker.SettingModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

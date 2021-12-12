@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Stocker.UiModels
+namespace Stocker.GuiModels
 {
     public interface IExploreRepository
     {
+        ExploreTree Get();
     }
 }

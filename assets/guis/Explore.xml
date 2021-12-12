@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree>
+    <parent>
+        <id>0</id>
+        <name>Root</name>
+    </parent>
+    <children>
+        <tree>
+            <parent>
+                <id>1</id>
+                <name>Test1</name>
+            </parent>
+            <children>
+                <tree>
+                    <parent>
+                        <id>2</id>
+                        <name>Test12</name>
+                    </parent>
+                </tree>
+            </children>
+        </tree>
+        <tree>
+            <parent>
+                <id>10</id>
+                <name>Test2</name>
+            </parent>
+        </tree>
+    </children>
+</tree>

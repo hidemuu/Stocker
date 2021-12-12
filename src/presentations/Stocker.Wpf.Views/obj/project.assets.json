@@ -18,6 +18,18 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "gong-wpf-dragdrop/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "LiveCharts.Wpf.NetCore3/0.9.7": {
         "type": "package",
         "dependencies": {
@@ -218,6 +230,19 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "Stocker.GuiModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stocker.GuiModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stocker.GuiModels.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -232,14 +257,17 @@
           "bin/placeholder/Stocker.Models.dll": {}
         }
       },
-      "Stocker.UiModels/1.0.0": {
+      "Stocker.SettingModels/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
-          "bin/placeholder/Stocker.UiModels.dll": {}
+          "bin/placeholder/Stocker.SettingModels.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.UiModels.dll": {}
+          "bin/placeholder/Stocker.SettingModels.dll": {}
         }
       },
       "Stocker.Utilities/1.0.0": {
@@ -256,8 +284,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Stocker.GuiModels": "1.0.0",
           "Stocker.Models": "1.0.0",
-          "Stocker.UiModels": "1.0.0",
+          "Stocker.SettingModels": "1.0.0",
           "Stocker.WpfControls": "1.0.0"
         },
         "compile": {
@@ -280,7 +309,8 @@
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",
           "Prism.Wpf": "8.1.97",
-          "ReactiveProperty.WPF": "8.0.1"
+          "ReactiveProperty.WPF": "8.0.1",
+          "gong-wpf-dragdrop": "3.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.WpfControls.dll": {}
@@ -317,6 +347,37 @@
         "lib/netcoreapp3.1/ControlzEx.pdb",
         "lib/netcoreapp3.1/ControlzEx.xml",
         "logo-mini.png"
+      ]
+    },
+    "gong-wpf-dragdrop/3.0.0": {
+      "sha512": "0qXxJ0gEJtDlC7fl19684wMuIfK+aA3Hj3Z1lGUEH/ZhmCnFpy0YNFy7IIyFM3SMr7hWdL3eRnG1oRm/j/Dgog==",
+      "type": "package",
+      "path": "gong-wpf-dragdrop/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GongSolutions.Wpf.DragDrop.png",
+        "LICENSE",
+        "gong-wpf-dragdrop.3.0.0.nupkg.sha512",
+        "gong-wpf-dragdrop.nuspec",
+        "lib/net462/GongSolutions.WPF.DragDrop.dll",
+        "lib/net462/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net462/GongSolutions.WPF.DragDrop.xml",
+        "lib/net47/GongSolutions.WPF.DragDrop.dll",
+        "lib/net47/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net47/GongSolutions.WPF.DragDrop.xml",
+        "lib/net48/GongSolutions.WPF.DragDrop.dll",
+        "lib/net48/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net48/GongSolutions.WPF.DragDrop.xml",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.dll",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.pdb",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.xml"
       ]
     },
     "LiveCharts.Wpf.NetCore3/0.9.7": {
@@ -764,15 +825,20 @@
         "version.txt"
       ]
     },
+    "Stocker.GuiModels/1.0.0": {
+      "type": "project",
+      "path": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj",
+      "msbuildProject": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj"
+    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "path": "../../domains/Stocker.Models/Stocker.Models.csproj",
       "msbuildProject": "../../domains/Stocker.Models/Stocker.Models.csproj"
     },
-    "Stocker.UiModels/1.0.0": {
+    "Stocker.SettingModels/1.0.0": {
       "type": "project",
-      "path": "../../domains/Stocker.UiModels/Stocker.UiModels.csproj",
-      "msbuildProject": "../../domains/Stocker.UiModels/Stocker.UiModels.csproj"
+      "path": "../../domains/Stocker.SettingModels/Stocker.SettingModels.csproj",
+      "msbuildProject": "../../domains/Stocker.SettingModels/Stocker.SettingModels.csproj"
     },
     "Stocker.Utilities/1.0.0": {
       "type": "project",

@@ -18,6 +18,27 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "CsvHelper/27.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {}
+        }
+      },
+      "gong-wpf-dragdrop/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "LiveCharts.Wpf.NetCore3/0.9.7": {
         "type": "package",
         "dependencies": {
@@ -700,6 +721,47 @@
           "lib/netcoreapp3.0/Unity.Container.dll": {}
         }
       },
+      "Stocker.Accessors/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CsvHelper": "27.2.1",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Stocker.Accessors.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stocker.Accessors.dll": {}
+        }
+      },
+      "Stocker.GuiModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stocker.GuiModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stocker.GuiModels.dll": {}
+        }
+      },
+      "Stocker.GuiRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Stocker.Accessors": "1.0.0",
+          "Stocker.GuiModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stocker.GuiRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stocker.GuiRepository.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -719,6 +781,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.17",
+          "Stocker.Accessors": "1.0.0",
           "Stocker.Models": "1.0.0"
         },
         "compile": {
@@ -728,14 +791,33 @@
           "bin/placeholder/Stocker.Repository.dll": {}
         }
       },
-      "Stocker.UiModels/1.0.0": {
+      "Stocker.SettingModels/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
-          "bin/placeholder/Stocker.UiModels.dll": {}
+          "bin/placeholder/Stocker.SettingModels.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.UiModels.dll": {}
+          "bin/placeholder/Stocker.SettingModels.dll": {}
+        }
+      },
+      "Stocker.SettingRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CsvHelper": "27.2.1",
+          "Newtonsoft.Json": "13.0.1",
+          "Stocker.Accessors": "1.0.0",
+          "Stocker.SettingModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stocker.SettingRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stocker.SettingRepository.dll": {}
         }
       },
       "Stocker.Utilities/1.0.0": {
@@ -752,8 +834,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Stocker.GuiModels": "1.0.0",
           "Stocker.Models": "1.0.0",
-          "Stocker.UiModels": "1.0.0",
+          "Stocker.SettingModels": "1.0.0",
           "Stocker.WpfControls": "1.0.0"
         },
         "compile": {
@@ -809,7 +892,8 @@
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",
           "Prism.Wpf": "8.1.97",
-          "ReactiveProperty.WPF": "8.0.1"
+          "ReactiveProperty.WPF": "8.0.1",
+          "gong-wpf-dragdrop": "3.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.WpfControls.dll": {}
@@ -846,6 +930,61 @@
         "lib/netcoreapp3.1/ControlzEx.pdb",
         "lib/netcoreapp3.1/ControlzEx.xml",
         "logo-mini.png"
+      ]
+    },
+    "CsvHelper/27.2.1": {
+      "sha512": "uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "type": "package",
+      "path": "csvhelper/27.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.27.2.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
+    "gong-wpf-dragdrop/3.0.0": {
+      "sha512": "0qXxJ0gEJtDlC7fl19684wMuIfK+aA3Hj3Z1lGUEH/ZhmCnFpy0YNFy7IIyFM3SMr7hWdL3eRnG1oRm/j/Dgog==",
+      "type": "package",
+      "path": "gong-wpf-dragdrop/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GongSolutions.Wpf.DragDrop.png",
+        "LICENSE",
+        "gong-wpf-dragdrop.3.0.0.nupkg.sha512",
+        "gong-wpf-dragdrop.nuspec",
+        "lib/net462/GongSolutions.WPF.DragDrop.dll",
+        "lib/net462/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net462/GongSolutions.WPF.DragDrop.xml",
+        "lib/net47/GongSolutions.WPF.DragDrop.dll",
+        "lib/net47/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net47/GongSolutions.WPF.DragDrop.xml",
+        "lib/net48/GongSolutions.WPF.DragDrop.dll",
+        "lib/net48/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net48/GongSolutions.WPF.DragDrop.xml",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.dll",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.pdb",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.xml"
       ]
     },
     "LiveCharts.Wpf.NetCore3/0.9.7": {
@@ -2063,6 +2202,21 @@
         "unity.container.nuspec"
       ]
     },
+    "Stocker.Accessors/1.0.0": {
+      "type": "project",
+      "path": "../../src/infrastructures/Stocker.Accessors/Stocker.Accessors.csproj",
+      "msbuildProject": "../../src/infrastructures/Stocker.Accessors/Stocker.Accessors.csproj"
+    },
+    "Stocker.GuiModels/1.0.0": {
+      "type": "project",
+      "path": "../../src/domains/Stocker.UiModels/Stocker.GuiModels.csproj",
+      "msbuildProject": "../../src/domains/Stocker.UiModels/Stocker.GuiModels.csproj"
+    },
+    "Stocker.GuiRepository/1.0.0": {
+      "type": "project",
+      "path": "../../src/applications/Stocker.UiRepository/Stocker.GuiRepository.csproj",
+      "msbuildProject": "../../src/applications/Stocker.UiRepository/Stocker.GuiRepository.csproj"
+    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "path": "../../src/domains/Stocker.Models/Stocker.Models.csproj",
@@ -2073,10 +2227,15 @@
       "path": "../../src/applications/Stocker.Repository/Stocker.Repository.csproj",
       "msbuildProject": "../../src/applications/Stocker.Repository/Stocker.Repository.csproj"
     },
-    "Stocker.UiModels/1.0.0": {
+    "Stocker.SettingModels/1.0.0": {
       "type": "project",
-      "path": "../../src/domains/Stocker.UiModels/Stocker.UiModels.csproj",
-      "msbuildProject": "../../src/domains/Stocker.UiModels/Stocker.UiModels.csproj"
+      "path": "../../src/domains/Stocker.SettingModels/Stocker.SettingModels.csproj",
+      "msbuildProject": "../../src/domains/Stocker.SettingModels/Stocker.SettingModels.csproj"
+    },
+    "Stocker.SettingRepository/1.0.0": {
+      "type": "project",
+      "path": "../../src/applications/Stocker.SettingRepository/Stocker.SettingRepository.csproj",
+      "msbuildProject": "../../src/applications/Stocker.SettingRepository/Stocker.SettingRepository.csproj"
     },
     "Stocker.Utilities/1.0.0": {
       "type": "project",
@@ -2109,7 +2268,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.17",
+      "Stocker.GuiRepository >= 1.0.0",
       "Stocker.Repository >= 1.0.0",
+      "Stocker.SettingRepository >= 1.0.0",
       "Stocker.Wpf.ViewModels >= 1.0.0"
     ]
   },
@@ -2152,6 +2313,12 @@
           "projectReferences": {
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.Repository\\Stocker.Repository.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.Repository\\Stocker.Repository.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.SettingRepository\\Stocker.SettingRepository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.SettingRepository\\Stocker.SettingRepository.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Stocker.GuiRepository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Stocker.GuiRepository.csproj"
             },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj"

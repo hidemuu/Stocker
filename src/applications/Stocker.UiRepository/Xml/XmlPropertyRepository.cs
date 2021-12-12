@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stocker.UiRepository.Xml
+namespace Stocker.GuiRepository.Xml
 {
     public class XmlPropertyRepository
     {

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WNt96IUenOVh7KKypGDvS16a7xbzRR/f6DlAimxi6kzorHQGxq/YrNkSq30fTkN7eFE6ML1C5JnWLj3U/oMgfw==",
+  "dgSpecHash": "RTxUvgk6hwwU+7ywZx4h6aT5tae89idBR/L8Mk3reLRnp+lWpFoe3uzaHkPskR158Rt4//smkKJf75NsEEi1aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.UiModels.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\nando\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

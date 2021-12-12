@@ -20,3 +20,6 @@ C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Styles\ChipBorderStyles.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Styles\MacLikeScrollBarStyles.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Styles\MaterialTextBlockStyles.baml
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Controls\ExpanderCard.g.cs
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Stocker.WpfControls_MarkupCompile.lref
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.WpfControls\obj\Debug\net5.0-windows\Controls\ExpanderCard.baml

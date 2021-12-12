@@ -31,8 +31,6 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Login\CreateAccount.g.cs
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Login\LoginMainContent.g.cs
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Login\LoginWindow.g.cs
-C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.UiModels.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.UiModels.pdb
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Dialogs\AlertDialog.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Dialogs\DialogWindow.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Dialogs\SuccessDialog.baml
@@ -68,3 +66,7 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Panels\Headers\ToolView.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Customs\CustomView.g.cs
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Customs\CustomView.baml
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.GuiModels.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.GuiModels.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.SettingModels.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Stocker.SettingModels.pdb
