@@ -1,0 +1,8 @@
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\bin\Debug\netstandard2.0\Stocker.DesignStore.deps.json
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\bin\Debug\netstandard2.0\Stocker.DesignStore.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\bin\Debug\netstandard2.0\Stocker.DesignStore.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\obj\Debug\netstandard2.0\Stocker.DesignStore.AssemblyInfoInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\obj\Debug\netstandard2.0\Stocker.DesignStore.AssemblyInfo.cs
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\obj\Debug\netstandard2.0\Stocker.DesignStore.csproj.CoreCompileInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\obj\Debug\netstandard2.0\Stocker.DesignStore.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\Stocker.DesignStore\obj\Debug\netstandard2.0\Stocker.DesignStore.pdb

@@ -25,9 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.ViewModels", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.Views", "src\presentations\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj", "{E71E2C41-26B1-4424-ADE6-D9E3B17E1E85}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.Models", "Stocker.Wpf.Models\Stocker.Wpf.Models.csproj", "{4DE5AD30-3D61-4DD4-AE4A-42726066D46A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.Models", "src\presentations\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj", "{4DE5AD30-3D61-4DD4-AE4A-42726066D46A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.WpfControls", "src\infrastructures\Stocker.WpfControls\Stocker.WpfControls.csproj", "{3F97A8A5-57FD-406F-9DDB-646418B9D42F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Repository", "src\applications\Stocker.Repository\Stocker.Repository.csproj", "{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Utilities", "src\infrastructures\Stocker.Utilities\Stocker.Utilities.csproj", "{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.UiModels", "src\domains\Stocker.UiModels\Stocker.UiModels.csproj", "{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.UiRepository", "src\applications\Stocker.UiRepository\Stocker.UiRepository.csproj", "{D11FE08E-0825-4836-B34D-6E45C4502F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{3F97A8A5-57FD-406F-9DDB-646418B9D42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F97A8A5-57FD-406F-9DDB-646418B9D42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F97A8A5-57FD-406F-9DDB-646418B9D42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11FE08E-0825-4836-B34D-6E45C4502F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11FE08E-0825-4836-B34D-6E45C4502F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11FE08E-0825-4836-B34D-6E45C4502F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11FE08E-0825-4836-B34D-6E45C4502F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +103,10 @@ Global
 		{E71E2C41-26B1-4424-ADE6-D9E3B17E1E85} = {6C08AE35-FAE3-4231-9F8C-15070BFE6435}
 		{4DE5AD30-3D61-4DD4-AE4A-42726066D46A} = {6C08AE35-FAE3-4231-9F8C-15070BFE6435}
 		{3F97A8A5-57FD-406F-9DDB-646418B9D42F} = {E471D18D-D800-4DCB-A6E9-C1DF7B8E893A}
+		{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
+		{9D2F0812-26A3-4629-9FF7-E9D7F20C7679} = {E471D18D-D800-4DCB-A6E9-C1DF7B8E893A}
+		{C4AAC4AA-C463-4C6F-B588-DF078ACB3193} = {B3A0A95F-8BDD-4B48-819A-07D391B6AFCB}
+		{D11FE08E-0825-4836-B34D-6E45C4502F47} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47E61B4F-17B8-49B1-9BFD-A7A2AEBE05EE}

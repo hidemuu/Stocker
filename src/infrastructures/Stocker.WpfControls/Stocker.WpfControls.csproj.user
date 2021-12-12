@@ -2,10 +2,25 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Page Update="Styles\BaseStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ChipBorderStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\ColorStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\LayoutStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\MacLikeScrollBarStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\MaterialTextBlockStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\NavigationRailStyles.xaml">

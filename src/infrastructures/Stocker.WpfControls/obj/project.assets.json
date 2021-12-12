@@ -18,6 +18,23 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "LiveCharts.Wpf.NetCore3/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/LiveCharts.Wpf.dll": {},
+          "lib/netcoreapp3.1/LiveCharts.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/LiveCharts.Wpf.dll": {},
+          "lib/netcoreapp3.1/LiveCharts.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "MahApps.Metro/2.4.9": {
         "type": "package",
         "dependencies": {
@@ -162,6 +179,15 @@
           "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
         }
       },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        }
+      },
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
@@ -208,6 +234,23 @@
         "lib/netcoreapp3.1/ControlzEx.pdb",
         "lib/netcoreapp3.1/ControlzEx.xml",
         "logo-mini.png"
+      ]
+    },
+    "LiveCharts.Wpf.NetCore3/0.9.7": {
+      "sha512": "d0HkmjLi+HifeXyD+E14aOMPDRmwkkiqPYW4GDbUS8Z1m6eQPGCShcDcbWwP4tBoWzGEkkSsy+XSHvaoW50b0Q==",
+      "type": "package",
+      "path": "livecharts.wpf.netcore3/0.9.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.Wpf.dll",
+        "lib/net40/LiveCharts.dll",
+        "lib/net40/LiveCharts.xml",
+        "lib/netcoreapp3.1/LiveCharts.Wpf.dll",
+        "lib/netcoreapp3.1/LiveCharts.dll",
+        "lib/netcoreapp3.1/LiveCharts.xml",
+        "livecharts.wpf.netcore3.0.9.7.nupkg.sha512",
+        "livecharts.wpf.netcore3.nuspec"
       ]
     },
     "MahApps.Metro/2.4.9": {
@@ -541,6 +584,25 @@
         "version.txt"
       ]
     },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Reactive/5.0.0": {
       "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
       "type": "package",
@@ -595,6 +657,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "LiveCharts.Wpf.NetCore3 >= 0.9.7",
       "MahApps.Metro >= 2.4.9",
       "MaterialDesignColors >= 2.0.3",
       "MaterialDesignThemes >= 4.2.1",
@@ -652,6 +715,10 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
+          "LiveCharts.Wpf.NetCore3": {
+            "target": "Package",
+            "version": "[0.9.7, )"
+          },
           "MahApps.Metro": {
             "target": "Package",
             "version": "[2.4.9, )"

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 
-31248162533
+8-639736111
 
-
-205-2041377453
-Styles\ColorStyles.xaml;Styles\LayoutStyles.xaml;Styles\NavigationRailStyles.xaml;
+141794036245
+207-2081604153
+Styles\BaseStyles.xaml;Styles\ButtonStyles.xaml;Styles\ChipBorderStyles.xaml;Styles\ColorStyles.xaml;Styles\LayoutStyles.xaml;Styles\MacLikeScrollBarStyles.xaml;Styles\MaterialTextBlockStyles.xaml;Styles\NavigationRailStyles.xaml;
 
 False
 

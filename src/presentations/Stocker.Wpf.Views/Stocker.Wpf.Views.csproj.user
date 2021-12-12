@@ -2,39 +2,114 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Panels\ExploreView.xaml.cs">
+    <Compile Update="Panels\Contents\CustomerTableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\MainView.xaml.cs">
+    <Compile Update="Panels\Contents\ExploreView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\NoSelectionView.xaml.cs">
+    <Compile Update="Panels\Footers\GuideView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\PropertyView.xaml.cs">
+    <Compile Update="Panels\Contents\LineItemTableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\ToolView.xaml.cs">
+    <Compile Update="Panels\Contents\DashboardView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Headers\MenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\OrderChartView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\OrderTableView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\ProductChartView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\PropertyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customs\CustomView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\ProductTableView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Contents\SettingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Panels\Headers\ToolView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Dialogs\AlertDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\DialogWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\SuccessDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\WarningDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\CreateAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\LoginMainContent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\ExploreView.xaml">
+    <Page Update="Panels\Contents\CustomerTableView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\MainView.xaml">
+    <Page Update="Panels\Contents\ExploreView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\NoSelectionView.xaml">
+    <Page Update="Panels\Footers\GuideView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\PropertyView.xaml">
+    <Page Update="Panels\Contents\LineItemTableView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\ToolView.xaml">
+    <Page Update="Panels\Contents\DashboardView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Headers\MenuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\OrderChartView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\OrderTableView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\ProductChartView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\PropertyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customs\CustomView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\ProductTableView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Contents\SettingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Panels\Headers\ToolView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

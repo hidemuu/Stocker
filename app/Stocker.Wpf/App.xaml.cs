@@ -1,8 +1,11 @@
-﻿using Prism.Ioc;
+﻿using Microsoft.EntityFrameworkCore;
+using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Unity;
+using Stocker.Models;
+using Stocker.Repository.Sql;
 using Stocker.Wpf.ViewModels;
 using Stocker.Wpf.ViewModels.Panels;
 using Stocker.Wpf.Views;
@@ -41,17 +44,23 @@ namespace Stocker.Wpf
             var container = containerRegistry.GetContainer();
 
             //リポジトリの登録
-            //containerRegistry.RegisterInstance<ILandMarkRepository>(new InMemoryLandMarkRepository());
+            containerRegistry.RegisterInstance<IStockerRepository>(new SqlStockerRepository(new DbContextOptionsBuilder<StockerDbContext>().UseSqlite(Constants.SqlLocalConnectionStringForSqlite)));
 
             //サービスの登録
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());
 
             //Viewの登録
-            containerRegistry.RegisterForNavigation<MainView>();
+            containerRegistry.RegisterForNavigation<DashboardView>();
             containerRegistry.RegisterForNavigation<ToolView>();
             containerRegistry.RegisterForNavigation<ExploreView>();
             containerRegistry.RegisterForNavigation<PropertyView>();
-            containerRegistry.RegisterForNavigation<NoSelectionView>();
+            containerRegistry.RegisterForNavigation<ProductTableView>();
+            containerRegistry.RegisterForNavigation<ProductChartView>();
+            containerRegistry.RegisterForNavigation<OrderTableView>();
+            containerRegistry.RegisterForNavigation<CustomerTableView>();
+            containerRegistry.RegisterForNavigation<LineItemTableView>();
+            containerRegistry.RegisterForNavigation<CustomView>();
+            containerRegistry.RegisterForNavigation<SettingView>();
 
             //Dialogの登録
             //containerRegistry.RegisterDialog<GameOverDialog, GameOverDialogViewModel>();
@@ -70,11 +79,17 @@ namespace Stocker.Wpf
             base.ConfigureViewModelLocator();
 
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
-            ViewModelLocationProvider.Register<MainView, MainViewModel>();
+            ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();
             ViewModelLocationProvider.Register<ToolView, ToolViewModel>();
             ViewModelLocationProvider.Register<ExploreView, ExploreViewModel>();
             ViewModelLocationProvider.Register<PropertyView, PropertyViewModel>();
-            ViewModelLocationProvider.Register<NoSelectionView, NoSelectionViewModel>();
+            ViewModelLocationProvider.Register<ProductTableView, ProductTableViewModel>();
+            ViewModelLocationProvider.Register<ProductChartView, ProductChartViewModel>();
+            ViewModelLocationProvider.Register<OrderTableView, OrderTableViewModel>();
+            ViewModelLocationProvider.Register<CustomerTableView, CustomerTableViewModel>();
+            ViewModelLocationProvider.Register<LineItemTableView, LineItemTableViewModel>();
+            ViewModelLocationProvider.Register<CustomView, CustomViewModel>();
+            ViewModelLocationProvider.Register<SettingView, SettingViewModel>();
         }
 
         protected override IModuleCatalog CreateModuleCatalog()

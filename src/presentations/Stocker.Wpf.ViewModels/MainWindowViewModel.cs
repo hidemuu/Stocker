@@ -34,17 +34,15 @@ namespace Stocker.Wpf.ViewModels
             this.RegionManager = regionManager;
             this.dialogService = dialogService;
 
-            Models.Add(new MainWindowModel(0, "Main", "Home", () => this.RegionManager.RequestNavigate(RegionNames.MainRegion, nameof(MainView))));
-            Models.Add(new MainWindowModel(1, "Dashboard", "Cog", () => this.RegionManager.RequestNavigate(RegionNames.MainRegion, nameof(MainView))));
-            Models.Add(new MainWindowModel(2, "Table", "Table", () => this.RegionManager.RequestNavigate(RegionNames.MainRegion, nameof(MainView))));
+            Models.Add(new MainWindowModel(0, "Dashboard", "Home", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(DashboardView))));
+            Models.Add(new MainWindowModel(1, "Product", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(ProductTableView))));
+            Models.Add(new MainWindowModel(2, "Product", "Chart", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(ProductChartView))));
+            Models.Add(new MainWindowModel(3, "Order", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(OrderTableView))));
+            Models.Add(new MainWindowModel(4, "Customer", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(CustomerTableView))));
+            Models.Add(new MainWindowModel(5, "Setting", "Cog", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(SettingView))));
 
-            LoadedCommand.Subscribe(() => { 
-                this.RegionManager.RequestNavigate(RegionNames.MainRegion, nameof(MainView));
-                this.RegionManager.RequestNavigate(RegionNames.ToolRegion, nameof(ToolView));
-                this.RegionManager.RequestNavigate(RegionNames.PropertyRegion, nameof(PropertyView));
-                this.RegionManager.RequestNavigate(RegionNames.ExploreRegion, nameof(ExploreView));
-            });
-            TabChangeCommand.Subscribe(_ => ChangeTab());
+            LoadedCommand.Subscribe(() => OnLoaded());
+            TabChangeCommand.Subscribe(_ => OnChangeTab());
 
             
             // 定期更新スレッド
@@ -57,26 +55,55 @@ namespace Stocker.Wpf.ViewModels
             timer.Start();
         }
 
-        private void ChangeTab()
+        private void OnLoaded()
+        {
+            this.RegionManager.RequestNavigate(RegionNames.ToolBarRegion, nameof(ToolView));
+            this.RegionManager.RequestNavigate(RegionNames.PropertyRegion, nameof(PropertyView));
+            this.RegionManager.RequestNavigate(RegionNames.ExploreRegion, nameof(ExploreView));
+            this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(DashboardView));
+        }
+
+        private void OnChangeTab()
         {
             Models.FirstOrDefault(x => x.Index == TabPage.Value).TabCommand();
         }
 
+        #region ナビゲーションメソッド
+
+        /// <summary>
+        /// このメソッドの返す値により、画面のインスタンスを使いまわすかどうか制御できる。
+        /// true ：インスタンスを使いまわす(画面遷移してもコンストラクタ呼ばれない)
+        /// false：インスタンスを使いまわさない(画面遷移するとコンストラクタ呼ばれる)
+        /// メソッド実装なし：trueになる
+        /// ※コンストラクタは呼ばれないが、Loadedイベントは起きる
+        /// </summary>
+        /// <param name="navigationContext"></param>
+        /// <returns></returns>
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
             return true;
         }
 
+        /// <summary>
+        /// この画面から他の画面に遷移する時の処理
+        /// </summary>
+        /// <param name="navigationContext"></param>
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
             //MessageBox.Show("退出完了");
         }
 
+        /// <summary>
+        /// 他の画面からこの画面に遷移してきた時の処理
+        /// </summary>
+        /// <param name="navigationContext"></param>
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
             journal = navigationContext.NavigationService.Journal;
 
         }
+
+        #endregion
 
     }
 }

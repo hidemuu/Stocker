@@ -1,0 +1,14 @@
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.deps.json
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Models.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Utilities.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Models.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\bin\Debug\netstandard2.0\Stocker.Utilities.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.csproj.AssemblyReference.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.AssemblyInfoInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.AssemblyInfo.cs
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.csproj.CoreCompileInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.csproj.CopyComplete
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.EntityFrameworks\obj\Debug\netstandard2.0\Stocker.Repository.EntityFrameworks.pdb

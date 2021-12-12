@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
+    <ProjectReference Include="..\..\domains\Stocker.UiModels\Stocker.UiModels.csproj" />
+    <ProjectReference Include="..\..\infrastructures\Stocker.WpfControls\Stocker.WpfControls.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dialogs\" />
+  </ItemGroup>
+
+</Project>

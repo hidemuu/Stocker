@@ -1,13 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -17,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dialogs\" />
+    <ProjectReference Include="..\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj" />
   </ItemGroup>
 
 </Project>
