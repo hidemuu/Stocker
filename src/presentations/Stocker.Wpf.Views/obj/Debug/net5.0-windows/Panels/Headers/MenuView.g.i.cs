@@ -53,7 +53,7 @@ namespace Stocker.Wpf.Views.Panels {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;component/panels/headers/menuview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;V1.0.0.0;component/panels/headers/menuview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Panels\Headers\MenuView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

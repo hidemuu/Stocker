@@ -53,7 +53,7 @@ namespace WpfControls.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfControls;component/components/expandercard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfControls;V1.0.0.0;component/components/expandercard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\ExpanderCard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
