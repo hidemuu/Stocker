@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RTxUvgk6hwwU+7ywZx4h6aT5tae89idBR/L8Mk3reLRnp+lWpFoe3uzaHkPskR158Rt4//smkKJf75NsEEi1aQ==",
+  "dgSpecHash": "YZv7/AA//FJTL7ioicO3eJk3R8FCOsrJ2Ak+vDJ4FTF/ZCGSohdVL2tJ2oCTlXyZMOZNJfzGwcNbiHHIfKGnVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Designer.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

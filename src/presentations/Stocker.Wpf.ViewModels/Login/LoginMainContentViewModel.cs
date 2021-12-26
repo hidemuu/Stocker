@@ -2,12 +2,12 @@
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Services.Dialogs;
-using Stocker.GuiModels;
-using Stocker.SettingModels;
+using Designer.Models;
+using Configurator.Models;
 using Stocker.Wpf.Models.Constants;
 using Stocker.Wpf.Views;
 using Stocker.Wpf.Views.Login;
-using Stocker.WpfControls.Helpers;
+using WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

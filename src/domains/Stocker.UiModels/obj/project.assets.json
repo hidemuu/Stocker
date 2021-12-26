@@ -287,9 +287,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj",
-      "projectName": "Stocker.GuiModels",
-      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj",
+      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Designer.Models.csproj",
+      "projectName": "Designer.Models",
+      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Designer.Models.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\obj\\",
       "projectStyle": "PackageReference",

@@ -3,7 +3,7 @@ using Prism.Regions;
 using Reactive.Bindings;
 using Stocker.Wpf.Views;
 using Stocker.Wpf.Views.Login;
-using Stocker.WpfControls.Helpers;
+using WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

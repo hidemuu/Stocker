@@ -719,9 +719,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj",
-      "projectName": "Stocker.WpfControls",
-      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj",
+      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\WpfControls.csproj",
+      "projectName": "WpfControls",
+      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\WpfControls.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\obj\\",
       "projectStyle": "PackageReference",

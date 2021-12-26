@@ -7,8 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/ColorStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/BaseStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

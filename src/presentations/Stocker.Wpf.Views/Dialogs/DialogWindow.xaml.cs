@@ -1,5 +1,5 @@
 ﻿using Prism.Services.Dialogs;
-using Stocker.WpfControls.Helpers;
+using WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

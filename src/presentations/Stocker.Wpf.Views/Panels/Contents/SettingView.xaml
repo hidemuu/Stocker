@@ -9,18 +9,17 @@
     xmlns:materialDesignColors="clr-namespace:MaterialDesignColors;assembly=MaterialDesignColors"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
-    Background="{DynamicResource MaterialDesignPaper}"
     d:DesignHeight="450"
     d:DesignWidth="800"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    Background="{DynamicResource MaterialDesignPaper}"
     mc:Ignorable="d">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/ColorStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/LayoutStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/NavigationRailStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/NavigationRailStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type materialDesignColors:Swatch}">
                 <Border Padding="32,4" HorizontalAlignment="Stretch">

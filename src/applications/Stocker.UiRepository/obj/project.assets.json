@@ -489,7 +489,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Stocker.Accessors/1.0.0": {
+      "Accessors/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -497,23 +497,23 @@
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/Stocker.Accessors.dll": {}
+          "bin/placeholder/Accessors.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.Accessors.dll": {}
+          "bin/placeholder/Accessors.dll": {}
         }
       },
-      "Stocker.GuiModels/1.0.0": {
+      "Designer.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
-          "bin/placeholder/Stocker.GuiModels.dll": {}
+          "bin/placeholder/Designer.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.GuiModels.dll": {}
+          "bin/placeholder/Designer.Models.dll": {}
         }
       }
     }
@@ -2619,22 +2619,22 @@
         "version.txt"
       ]
     },
-    "Stocker.Accessors/1.0.0": {
+    "Accessors/1.0.0": {
       "type": "project",
-      "path": "../../infrastructures/Stocker.Accessors/Stocker.Accessors.csproj",
-      "msbuildProject": "../../infrastructures/Stocker.Accessors/Stocker.Accessors.csproj"
+      "path": "../../infrastructures/Accessors/Accessors.csproj",
+      "msbuildProject": "../../infrastructures/Accessors/Accessors.csproj"
     },
-    "Stocker.GuiModels/1.0.0": {
+    "Designer.Models/1.0.0": {
       "type": "project",
-      "path": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj",
-      "msbuildProject": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj"
+      "path": "../../domains/Designer.Models/Designer.Models.csproj",
+      "msbuildProject": "../../domains/Designer.Models/Designer.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3",
-      "Stocker.Accessors >= 1.0.0",
-      "Stocker.GuiModels >= 1.0.0"
+      "Accessors >= 1.0.0",
+      "Designer.Models >= 1.0.0",
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -2646,9 +2646,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Stocker.GuiRepository.csproj",
-      "projectName": "Stocker.GuiRepository",
-      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Stocker.GuiRepository.csproj",
+      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Designer.Repository.csproj",
+      "projectName": "Designer.Repository",
+      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Designer.Repository.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\obj\\",
       "projectStyle": "PackageReference",
@@ -2674,11 +2674,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Designer.Models\\Designer.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Designer.Models\\Designer.Models.csproj"
             },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Accessors\\Accessors.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Accessors\\Accessors.csproj"
             }
           }
         }

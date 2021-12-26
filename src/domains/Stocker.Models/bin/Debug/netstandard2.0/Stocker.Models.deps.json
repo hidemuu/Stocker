@@ -11,7 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.1",
-          "Stocker.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "runtime": {
           "Stocker.Models.dll": {}
@@ -31,9 +31,9 @@
           }
         }
       },
-      "Stocker.Utilities/1.0.0": {
+      "Utilities/1.0.0": {
         "runtime": {
-          "Stocker.Utilities.dll": {}
+          "Utilities.dll": {}
         }
       }
     }
@@ -65,7 +65,7 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "Stocker.Utilities/1.0.0": {
+    "Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -2510,9 +2510,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj",
-      "projectName": "Stocker.Accessors",
-      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj",
+      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Accessors.csproj",
+      "projectName": "Accessors",
+      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Accessors.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\obj\\",
       "projectStyle": "PackageReference",

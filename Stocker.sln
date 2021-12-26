@@ -27,25 +27,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.Views", "src\pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Wpf.Models", "src\presentations\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj", "{4DE5AD30-3D61-4DD4-AE4A-42726066D46A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.WpfControls", "src\infrastructures\Stocker.WpfControls\Stocker.WpfControls.csproj", "{3F97A8A5-57FD-406F-9DDB-646418B9D42F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControls", "src\infrastructures\WpfControls\WpfControls.csproj", "{3F97A8A5-57FD-406F-9DDB-646418B9D42F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Repository", "src\applications\Stocker.Repository\Stocker.Repository.csproj", "{C31F2106-8FEC-4B98-ADB8-827BD7ADAB35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Utilities", "src\infrastructures\Stocker.Utilities\Stocker.Utilities.csproj", "{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "src\infrastructures\Utilities\Utilities.csproj", "{9D2F0812-26A3-4629-9FF7-E9D7F20C7679}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.GuiModels", "src\domains\Stocker.UiModels\Stocker.GuiModels.csproj", "{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designer.Models", "src\domains\Designer.Models\Designer.Models.csproj", "{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.GuiRepository", "src\applications\Stocker.UiRepository\Stocker.GuiRepository.csproj", "{D11FE08E-0825-4836-B34D-6E45C4502F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designer.Repository", "src\applications\Stocker.UiRepository\Designer.Repository.csproj", "{D11FE08E-0825-4836-B34D-6E45C4502F47}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.SettingModels", "src\domains\Stocker.SettingModels\Stocker.SettingModels.csproj", "{9BE496F5-C1D0-4CE6-AD56-1B917AB8BFF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configurator.Models", "src\domains\Configurator.Models\Configurator.Models.csproj", "{9BE496F5-C1D0-4CE6-AD56-1B917AB8BFF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.SettingRepository", "src\applications\Stocker.SettingRepository\Stocker.SettingRepository.csproj", "{3BF25696-ED87-457C-A0B6-F4373CD5640F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configurator.Repository", "src\applications\Configurator.Repository\Configurator.Repository.csproj", "{3BF25696-ED87-457C-A0B6-F4373CD5640F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocker.Accessors", "src\infrastructures\Stocker.Accessors\Stocker.Accessors.csproj", "{094D0E80-E918-468A-8A1B-2EA7E1F5D995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accessors", "src\infrastructures\Accessors\Accessors.csproj", "{094D0E80-E918-468A-8A1B-2EA7E1F5D995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocker.ScheduleModels", "src\domains\Stocker.ScheduleModels\Stocker.ScheduleModels.csproj", "{CC606F63-D5D5-4A42-A557-F22D5CAB1F03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Models", "src\domains\Scheduler.Models\Scheduler.Models.csproj", "{CC606F63-D5D5-4A42-A557-F22D5CAB1F03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocker.ScheduleRepository", "src\applications\Stocker.ScheduleRepository\Stocker.ScheduleRepository.csproj", "{FC8AF68B-88D6-41AF-89D7-7796387B59FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Repository", "src\applications\Scheduler.Repository\Scheduler.Repository.csproj", "{FC8AF68B-88D6-41AF-89D7-7796387B59FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

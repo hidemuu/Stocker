@@ -15,10 +15,12 @@ C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository.Enti
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Repository.deps.json
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Repository.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Repository.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Accessors.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Models.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Utilities.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Utilities.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Models.pdb
-C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Utilities.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Accessors.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Utilities.pdb
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.csproj.AssemblyReference.cache
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.AssemblyInfoInputs.cache
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.AssemblyInfo.cs
@@ -26,5 +28,3 @@ C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.csproj.CopyComplete
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\obj\Debug\netstandard2.0\Stocker.Repository.pdb
-C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Accessors.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\applications\Stocker.Repository\bin\Debug\netstandard2.0\Stocker.Accessors.pdb

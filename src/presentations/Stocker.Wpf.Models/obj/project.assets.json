@@ -230,17 +230,30 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
-      "Stocker.GuiModels/1.0.0": {
+      "Configurator.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
-          "bin/placeholder/Stocker.GuiModels.dll": {}
+          "bin/placeholder/Configurator.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.GuiModels.dll": {}
+          "bin/placeholder/Configurator.Models.dll": {}
+        }
+      },
+      "Designer.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Designer.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Designer.Models.dll": {}
         }
       },
       "Stocker.Models/1.0.0": {
@@ -248,7 +261,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Stocker.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.Models.dll": {}
@@ -257,30 +270,17 @@
           "bin/placeholder/Stocker.Models.dll": {}
         }
       },
-      "Stocker.SettingModels/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stocker.SettingModels.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stocker.SettingModels.dll": {}
-        }
-      },
-      "Stocker.Utilities/1.0.0": {
+      "Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Stocker.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         }
       },
-      "Stocker.WpfControls/1.0.0": {
+      "WpfControls/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -294,10 +294,10 @@
           "gong-wpf-dragdrop": "3.0.0"
         },
         "compile": {
-          "bin/placeholder/Stocker.WpfControls.dll": {}
+          "bin/placeholder/WpfControls.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.WpfControls.dll": {}
+          "bin/placeholder/WpfControls.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -806,38 +806,38 @@
         "version.txt"
       ]
     },
-    "Stocker.GuiModels/1.0.0": {
+    "Configurator.Models/1.0.0": {
       "type": "project",
-      "path": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj",
-      "msbuildProject": "../../domains/Stocker.UiModels/Stocker.GuiModels.csproj"
+      "path": "../../domains/Configurator.Models/Configurator.Models.csproj",
+      "msbuildProject": "../../domains/Configurator.Models/Configurator.Models.csproj"
+    },
+    "Designer.Models/1.0.0": {
+      "type": "project",
+      "path": "../../domains/Designer.Models/Designer.Models.csproj",
+      "msbuildProject": "../../domains/Designer.Models/Designer.Models.csproj"
     },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "path": "../../domains/Stocker.Models/Stocker.Models.csproj",
       "msbuildProject": "../../domains/Stocker.Models/Stocker.Models.csproj"
     },
-    "Stocker.SettingModels/1.0.0": {
+    "Utilities/1.0.0": {
       "type": "project",
-      "path": "../../domains/Stocker.SettingModels/Stocker.SettingModels.csproj",
-      "msbuildProject": "../../domains/Stocker.SettingModels/Stocker.SettingModels.csproj"
+      "path": "../../infrastructures/Utilities/Utilities.csproj",
+      "msbuildProject": "../../infrastructures/Utilities/Utilities.csproj"
     },
-    "Stocker.Utilities/1.0.0": {
+    "WpfControls/1.0.0": {
       "type": "project",
-      "path": "../../infrastructures/Stocker.Utilities/Stocker.Utilities.csproj",
-      "msbuildProject": "../../infrastructures/Stocker.Utilities/Stocker.Utilities.csproj"
-    },
-    "Stocker.WpfControls/1.0.0": {
-      "type": "project",
-      "path": "../../infrastructures/Stocker.WpfControls/Stocker.WpfControls.csproj",
-      "msbuildProject": "../../infrastructures/Stocker.WpfControls/Stocker.WpfControls.csproj"
+      "path": "../../infrastructures/WpfControls/WpfControls.csproj",
+      "msbuildProject": "../../infrastructures/WpfControls/WpfControls.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Stocker.GuiModels >= 1.0.0",
+      "Configurator.Models >= 1.0.0",
+      "Designer.Models >= 1.0.0",
       "Stocker.Models >= 1.0.0",
-      "Stocker.SettingModels >= 1.0.0",
-      "Stocker.WpfControls >= 1.0.0"
+      "WpfControls >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -877,17 +877,17 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Configurator.Models\\Configurator.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Configurator.Models\\Configurator.Models.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Designer.Models\\Designer.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Designer.Models\\Designer.Models.csproj"
+            },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.Models\\Stocker.Models.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.Models\\Stocker.Models.csproj"
             },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Stocker.SettingModels.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Stocker.SettingModels.csproj"
-            },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.UiModels\\Stocker.GuiModels.csproj"
-            },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\WpfControls\\WpfControls.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\WpfControls\\WpfControls.csproj"
             }
           }
         }

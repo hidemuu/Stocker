@@ -1,6 +1,6 @@
 ﻿using Prism.Mvvm;
 using Reactive.Bindings;
-using Stocker.GuiModels;
+using Designer.Models;
 using Stocker.Wpf.Models;
 using Stocker.Wpf.Models.Panels;
 using System;
@@ -17,7 +17,7 @@ namespace Stocker.Wpf.ViewModels.Panels
         public ReactiveCollection<TreeModel<ExploreModel>> Models { get; private set; } = new ReactiveCollection<TreeModel<ExploreModel>>();
 
 
-        public ExploreViewModel(IGuiRepository guiRepository)
+        public ExploreViewModel(IDesignRepository guiRepository)
         {
             var exploreTree = guiRepository.Explores.Get();
             MakeDemoModel();

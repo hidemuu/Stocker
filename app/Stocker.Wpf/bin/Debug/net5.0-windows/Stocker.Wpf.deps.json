@@ -8,12 +8,12 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf/1.0.0": {
         "dependencies": {
+          "Configurator.Repository": "1.0.0",
+          "Designer.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.17",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.17",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.17",
-          "Stocker.GuiRepository": "1.0.0",
           "Stocker.Repository": "1.0.0",
-          "Stocker.SettingRepository": "1.0.0",
           "Stocker.Wpf.ViewModels": "1.0.0"
         },
         "runtime": {
@@ -578,36 +578,55 @@
           }
         }
       },
-      "Stocker.Accessors/1.0.0": {
+      "Accessors/1.0.0": {
         "dependencies": {
           "CsvHelper": "27.2.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "Stocker.Accessors.dll": {}
+          "Accessors.dll": {}
         }
       },
-      "Stocker.GuiModels/1.0.0": {
+      "Configurator.Models/1.0.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
-          "Stocker.GuiModels.dll": {}
+          "Configurator.Models.dll": {}
         }
       },
-      "Stocker.GuiRepository/1.0.0": {
+      "Configurator.Repository/1.0.0": {
         "dependencies": {
-          "Stocker.Accessors": "1.0.0",
-          "Stocker.GuiModels": "1.0.0"
+          "Accessors": "1.0.0",
+          "Configurator.Models": "1.0.0",
+          "CsvHelper": "27.2.1",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "Stocker.GuiRepository.dll": {}
+          "Configurator.Repository.dll": {}
+        }
+      },
+      "Designer.Models/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "Designer.Models.dll": {}
+        }
+      },
+      "Designer.Repository/1.0.0": {
+        "dependencies": {
+          "Accessors": "1.0.0",
+          "Designer.Models": "1.0.0"
+        },
+        "runtime": {
+          "Designer.Repository.dll": {}
         }
       },
       "Stocker.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Stocker.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "runtime": {
           "Stocker.Models.dll": {}
@@ -615,44 +634,20 @@
       },
       "Stocker.Repository/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.17",
-          "Stocker.Accessors": "1.0.0",
           "Stocker.Models": "1.0.0"
         },
         "runtime": {
           "Stocker.Repository.dll": {}
         }
       },
-      "Stocker.SettingModels/1.0.0": {
-        "dependencies": {
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
-        "runtime": {
-          "Stocker.SettingModels.dll": {}
-        }
-      },
-      "Stocker.SettingRepository/1.0.0": {
-        "dependencies": {
-          "CsvHelper": "27.2.1",
-          "Newtonsoft.Json": "13.0.1",
-          "Stocker.Accessors": "1.0.0",
-          "Stocker.SettingModels": "1.0.0"
-        },
-        "runtime": {
-          "Stocker.SettingRepository.dll": {}
-        }
-      },
-      "Stocker.Utilities/1.0.0": {
-        "runtime": {
-          "Stocker.Utilities.dll": {}
-        }
-      },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
-          "Stocker.GuiModels": "1.0.0",
+          "Configurator.Models": "1.0.0",
+          "Designer.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
-          "Stocker.SettingModels": "1.0.0",
-          "Stocker.WpfControls": "1.0.0"
+          "WpfControls": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Models.dll": {}
@@ -675,7 +670,12 @@
           "Stocker.Wpf.Views.dll": {}
         }
       },
-      "Stocker.WpfControls/1.0.0": {
+      "Utilities/1.0.0": {
+        "runtime": {
+          "Utilities.dll": {}
+        }
+      },
+      "WpfControls/1.0.0": {
         "dependencies": {
           "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MahApps.Metro": "2.4.9",
@@ -687,7 +687,7 @@
           "gong-wpf-dragdrop": "3.0.0"
         },
         "runtime": {
-          "Stocker.WpfControls.dll": {}
+          "WpfControls.dll": {}
         }
       }
     }
@@ -1090,17 +1090,27 @@
       "path": "unity.container/5.11.11",
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
     },
-    "Stocker.Accessors/1.0.0": {
+    "Accessors/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Stocker.GuiModels/1.0.0": {
+    "Configurator.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Stocker.GuiRepository/1.0.0": {
+    "Configurator.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Designer.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Designer.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1111,21 +1121,6 @@
       "sha512": ""
     },
     "Stocker.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.SettingModels/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.SettingRepository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1145,7 +1140,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Stocker.WpfControls/1.0.0": {
+    "Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfControls/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

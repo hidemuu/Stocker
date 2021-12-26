@@ -287,9 +287,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Stocker.SettingModels.csproj",
-      "projectName": "Stocker.SettingModels",
-      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Stocker.SettingModels.csproj",
+      "projectUniqueName": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Configurator.Models.csproj",
+      "projectName": "Configurator.Models",
+      "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\Configurator.Models.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.SettingModels\\obj\\",
       "projectStyle": "PackageReference",

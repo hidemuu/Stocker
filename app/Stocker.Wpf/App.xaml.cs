@@ -4,13 +4,13 @@ using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Unity;
-using Stocker.GuiModels;
-using Stocker.GuiRepository.Xml;
+using Designer.Models;
+using Designer.Repository.Xml;
 using Stocker.Models;
 using Stocker.Repository.Sql;
-using Stocker.SettingModels;
-using Stocker.SettingRepository.Xml;
-using Stocker.Utilities;
+using Configurator.Models;
+using Configurator.Repository.Xml;
+using Utilities;
 using Stocker.Wpf.ViewModels;
 using Stocker.Wpf.ViewModels.Panels;
 using Stocker.Wpf.Views;
@@ -52,7 +52,7 @@ namespace Stocker.Wpf
             var rootPath = PathHelper.GetCurrentRootPath("Stocker");
             containerRegistry.RegisterInstance<IStockerRepository>(new SqlStockerRepository(new DbContextOptionsBuilder<StockerDbContext>().UseSqlite(@"Data Source=" + rootPath + @"assets\db.sqlite")));
             containerRegistry.RegisterInstance<ISettingRepository>(new XmlSettingRepository(rootPath + @"assets\settings\"));
-            containerRegistry.RegisterInstance<IGuiRepository>(new XmlGuiRepository(rootPath + @"assets\guis\"));
+            containerRegistry.RegisterInstance<IDesignRepository>(new XmlDesignRepository(rootPath + @"assets\guis\"));
 
             //サービスの登録
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());

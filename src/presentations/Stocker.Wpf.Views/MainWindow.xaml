@@ -29,9 +29,9 @@
     <metro:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/LayoutStyles.xaml" />
-                <ResourceDictionary Source="/Stocker.WpfControls;component/Styles/NavigationRailStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/WpfControls;component/Styles/NavigationRailStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </metro:MetroWindow.Resources>
@@ -99,12 +99,14 @@
                 prism:RegionManager.RegionName="{x:Static constants:RegionNames.ToolBarRegion}"
                 DockPanel.Dock="Top" />
             <ContentControl
-                x:Name="exploreRegion" MaxWidth="200"
+                x:Name="exploreRegion"
+                MaxWidth="200"
                 prism:RegionManager.RegionManager="{Binding RegionManager}"
                 prism:RegionManager.RegionName="{x:Static constants:RegionNames.ExploreRegion}"
                 DockPanel.Dock="Left" />
             <ContentControl
-                x:Name="propertyRegion" MaxWidth="200"
+                x:Name="propertyRegion"
+                MaxWidth="200"
                 prism:RegionManager.RegionManager="{Binding RegionManager}"
                 prism:RegionManager.RegionName="{x:Static constants:RegionNames.PropertyRegion}"
                 DockPanel.Dock="Right" />
@@ -114,9 +116,10 @@
                 prism:RegionManager.RegionName="{x:Static constants:RegionNames.StatusBarRegion}"
                 DockPanel.Dock="Bottom" />
             <ContentControl
-                x:Name="contentRegion" MinWidth="400"
+                x:Name="contentRegion"
+                MinWidth="400"
                 prism:RegionManager.RegionManager="{Binding RegionManager}"
-                prism:RegionManager.RegionName="{x:Static constants:RegionNames.ContentRegion}"/>
+                prism:RegionManager.RegionName="{x:Static constants:RegionNames.ContentRegion}" />
         </DockPanel>
     </Grid>
 

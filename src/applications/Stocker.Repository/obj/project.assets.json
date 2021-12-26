@@ -688,7 +688,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Stocker.Accessors/1.0.0": {
+      "Accessors/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -696,10 +696,10 @@
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/Stocker.Accessors.dll": {}
+          "bin/placeholder/Accessors.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.Accessors.dll": {}
+          "bin/placeholder/Accessors.dll": {}
         }
       },
       "Stocker.Models/1.0.0": {
@@ -707,7 +707,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Stocker.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.Models.dll": {}
@@ -716,14 +716,14 @@
           "bin/placeholder/Stocker.Models.dll": {}
         }
       },
-      "Stocker.Utilities/1.0.0": {
+      "Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Stocker.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stocker.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         }
       }
     }
@@ -3097,27 +3097,27 @@
         "version.txt"
       ]
     },
-    "Stocker.Accessors/1.0.0": {
+    "Accessors/1.0.0": {
       "type": "project",
-      "path": "../../infrastructures/Stocker.Accessors/Stocker.Accessors.csproj",
-      "msbuildProject": "../../infrastructures/Stocker.Accessors/Stocker.Accessors.csproj"
+      "path": "../../infrastructures/Accessors/Accessors.csproj",
+      "msbuildProject": "../../infrastructures/Accessors/Accessors.csproj"
     },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "path": "../../domains/Stocker.Models/Stocker.Models.csproj",
       "msbuildProject": "../../domains/Stocker.Models/Stocker.Models.csproj"
     },
-    "Stocker.Utilities/1.0.0": {
+    "Utilities/1.0.0": {
       "type": "project",
-      "path": "../../infrastructures/Stocker.Utilities/Stocker.Utilities.csproj",
-      "msbuildProject": "../../infrastructures/Stocker.Utilities/Stocker.Utilities.csproj"
+      "path": "../../infrastructures/Utilities/Utilities.csproj",
+      "msbuildProject": "../../infrastructures/Utilities/Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Accessors >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.17",
       "NETStandard.Library >= 2.0.3",
-      "Stocker.Accessors >= 1.0.0",
       "Stocker.Models >= 1.0.0"
     ]
   },
@@ -3161,8 +3161,8 @@
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.Models\\Stocker.Models.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.Models\\Stocker.Models.csproj"
             },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Accessors\\Accessors.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Accessors\\Accessors.csproj"
             }
           }
         }

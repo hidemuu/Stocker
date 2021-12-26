@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b5LcvkT+oNI5NBMAHZooddK5qSD7XAyD4b5hkyjaFpc/YgH1J5uHYzHxUp/4nJJ0pp1br4VXpj3IV/nYd64npw==",
+  "dgSpecHash": "sgxiQCWk3t0U138LAyyPlzsnuTURuJa2UWn7TJd+JHpFx69OO3HBfU8oxfYWvRk80mNLv+6nzefBZkb8xXX6vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Stocker.Accessors.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.Accessors\\Accessors.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",

@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\applications\Configurator.Repository\Configurator.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Stocker.SettingRepository\Stocker.SettingRepository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Stocker.UiRepository\Stocker.GuiRepository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Stocker.UiRepository\Designer.Repository.csproj" />
     <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.ViewModels\Stocker.Wpf.ViewModels.csproj" />
   </ItemGroup>
 

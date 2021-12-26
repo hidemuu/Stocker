@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
-    <ProjectReference Include="..\..\infrastructures\Stocker.Accessors\Stocker.Accessors.csproj" />
+    <ProjectReference Include="..\..\infrastructures\Accessors\Accessors.csproj" />
   </ItemGroup>
 
 </Project>

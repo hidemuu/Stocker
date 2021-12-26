@@ -1,4 +1,4 @@
-﻿using Stocker.Utilities;
+﻿using Utilities;
 using System;
 
 namespace Stocker.Models

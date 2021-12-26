@@ -1,9 +1,9 @@
-﻿using Stocker.GuiModels;
+﻿using Designer.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stocker.GuiRepository.Xml
+namespace Designer.Repository.Xml
 {
     public class XmlToolRepository : IToolRepository
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BjZJ8BfUWq+cIMHTlcMN86QmBFIE6xA9r4CzIZcJQ8k5OGHGzZXcoZ3PeVIEUArKL8+/OJ9NuaFeAMgmuZUzGQ==",
+  "dgSpecHash": "JaeLo2ygJJg83bstVGZhgdT+g0mAGg4D3T+xeuTlR9ZArTIinoX2wBWKU9HL3sMPIIHwM8FY4TtNXss/ACT6LQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\Stocker.WpfControls.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Stocker.WpfControls\\WpfControls.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\gong-wpf-dragdrop\\3.0.0\\gong-wpf-dragdrop.3.0.0.nupkg.sha512",

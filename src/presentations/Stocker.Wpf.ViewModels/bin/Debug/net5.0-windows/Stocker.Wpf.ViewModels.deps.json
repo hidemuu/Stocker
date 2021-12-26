@@ -216,42 +216,37 @@
           }
         }
       },
-      "Stocker.GuiModels/1.0.0": {
+      "Configurator.Models/1.0.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
-          "Stocker.GuiModels.dll": {}
+          "Configurator.Models.dll": {}
+        }
+      },
+      "Designer.Models/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "Designer.Models.dll": {}
         }
       },
       "Stocker.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Stocker.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "runtime": {
           "Stocker.Models.dll": {}
         }
       },
-      "Stocker.SettingModels/1.0.0": {
-        "dependencies": {
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
-        "runtime": {
-          "Stocker.SettingModels.dll": {}
-        }
-      },
-      "Stocker.Utilities/1.0.0": {
-        "runtime": {
-          "Stocker.Utilities.dll": {}
-        }
-      },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
-          "Stocker.GuiModels": "1.0.0",
+          "Configurator.Models": "1.0.0",
+          "Designer.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
-          "Stocker.SettingModels": "1.0.0",
-          "Stocker.WpfControls": "1.0.0"
+          "WpfControls": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Models.dll": {}
@@ -265,7 +260,12 @@
           "Stocker.Wpf.Views.dll": {}
         }
       },
-      "Stocker.WpfControls/1.0.0": {
+      "Utilities/1.0.0": {
+        "runtime": {
+          "Utilities.dll": {}
+        }
+      },
+      "WpfControls/1.0.0": {
         "dependencies": {
           "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MahApps.Metro": "2.4.9",
@@ -277,7 +277,7 @@
           "gong-wpf-dragdrop": "3.0.0"
         },
         "runtime": {
-          "Stocker.WpfControls.dll": {}
+          "WpfControls.dll": {}
         }
       }
     }
@@ -449,22 +449,17 @@
       "path": "unity.container/5.11.11",
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
     },
-    "Stocker.GuiModels/1.0.0": {
+    "Configurator.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Designer.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Stocker.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.SettingModels/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -479,7 +474,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Stocker.WpfControls/1.0.0": {
+    "Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfControls/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

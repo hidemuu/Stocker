@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oTF67e3x7k/pxiHe2eRKXCnlmLiEiGFvEw8viWWJKtG6Gf6kuFBABAM9enN3dMwgoZpPw6MasbRdpG5R8DUttQ==",
+  "dgSpecHash": "oII13ASrjxztfc/rlbqUCZrQhTAFh02CJ5FAs3hFIdumgGxPNIYO3T6e6PthoLmpqYbWa/jAfsfBVapsyeyK7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.ScheduleModels\\Stocker.ScheduleModels.csproj",
+  "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Stocker.ScheduleModels\\Scheduler.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

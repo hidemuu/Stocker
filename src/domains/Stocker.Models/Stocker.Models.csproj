@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\infrastructures\Stocker.Utilities\Stocker.Utilities.csproj" />
+    <ProjectReference Include="..\..\infrastructures\Utilities\Utilities.csproj" />
   </ItemGroup>
 
 </Project>

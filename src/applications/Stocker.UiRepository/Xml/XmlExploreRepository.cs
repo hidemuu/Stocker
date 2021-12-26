@@ -1,12 +1,12 @@
-﻿using Stocker.Accessors;
-using Stocker.GuiModels;
+﻿using Accessors;
+using Designer.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stocker.GuiRepository.Xml
+namespace Designer.Repository.Xml
 {
-    public class XmlExploreRepository : GuiRepositoryBase<ExploreTree>, IExploreRepository
+    public class XmlExploreRepository : DesignRepositoryBase<ExploreTree>, IExploreRepository
     {
         public XmlExploreRepository(XmlFileHelper fileHelper) : base(fileHelper)
         {
