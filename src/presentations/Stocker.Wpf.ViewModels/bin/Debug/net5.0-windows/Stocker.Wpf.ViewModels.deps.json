@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf.ViewModels/1.0.0": {
         "dependencies": {
+          "Account.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
           "Stocker.Wpf.Views": "1.0.0"
         },
@@ -24,6 +25,14 @@
           "lib/netcoreapp3.1/ControlzEx.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.4.0.50"
+          }
+        }
+      },
+      "CsvHelper/27.2.1": {
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
           }
         }
       },
@@ -216,8 +225,26 @@
           }
         }
       },
+      "Accessors/1.0.0": {
+        "dependencies": {
+          "CsvHelper": "27.2.1",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Accessors.dll": {}
+        }
+      },
+      "Account.Models/1.0.0": {
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "runtime": {
+          "Account.Models.dll": {}
+        }
+      },
       "Configurator.Models/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
@@ -226,6 +253,7 @@
       },
       "Designer.Models/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
@@ -294,6 +322,13 @@
       "sha512": "sha512-pZ5z4hYWwE4R13UMCVs6vII//nL7hz+Nwn4oJlnsZJRGqJNy6Z9KnJiTZfly6lKFu0pMc1aWBZpx+VqFTQKP1Q==",
       "path": "controlzex/4.4.0",
       "hashPath": "controlzex.4.4.0.nupkg.sha512"
+    },
+    "CsvHelper/27.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "path": "csvhelper/27.2.1",
+      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
     },
     "gong-wpf-dragdrop/3.0.0": {
       "type": "package",
@@ -448,6 +483,16 @@
       "sha512": "sha512-47u4MBG8hxV2ZBUK7LlXcZQW8yWSqUSCRG+2/TBA2CSkxkQlMfVUJ0RJODJsZgsiSgy4N0M8HIr7J88drYR/OQ==",
       "path": "unity.container/5.11.11",
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
+    },
+    "Accessors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Account.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Configurator.Models/1.0.0": {
       "type": "project",

@@ -735,10 +735,38 @@
           "bin/placeholder/Accessors.dll": {}
         }
       },
+      "Account.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Models.dll": {}
+        }
+      },
+      "Account.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0",
+          "Account.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Account.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Account.Repository.dll": {}
+        }
+      },
       "Configurator.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
@@ -768,6 +796,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
@@ -843,6 +872,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Account.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
           "Stocker.Wpf.Views": "1.0.0"
         },
@@ -2207,6 +2237,16 @@
       "path": "../../src/infrastructures/Accessors/Accessors.csproj",
       "msbuildProject": "../../src/infrastructures/Accessors/Accessors.csproj"
     },
+    "Account.Models/1.0.0": {
+      "type": "project",
+      "path": "../../src/domains/Account.Models/Account.Models.csproj",
+      "msbuildProject": "../../src/domains/Account.Models/Account.Models.csproj"
+    },
+    "Account.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../src/applications/Account.Repository/Account.Repository.csproj",
+      "msbuildProject": "../../src/applications/Account.Repository/Account.Repository.csproj"
+    },
     "Configurator.Models/1.0.0": {
       "type": "project",
       "path": "../../src/domains/Configurator.Models/Configurator.Models.csproj",
@@ -2265,6 +2305,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
+      "Account.Repository >= 1.0.0",
       "Configurator.Repository >= 1.0.0",
       "Designer.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.17",
@@ -2311,6 +2352,9 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Account.Repository\\Account.Repository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Account.Repository\\Account.Repository.csproj"
+            },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Configurator.Repository\\Configurator.Repository.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Configurator.Repository\\Configurator.Repository.csproj"
             },

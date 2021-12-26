@@ -17,9 +17,9 @@ namespace Stocker.Wpf.ViewModels.Panels
         public ReactiveCollection<TreeModel<ExploreModel>> Models { get; private set; } = new ReactiveCollection<TreeModel<ExploreModel>>();
 
 
-        public ExploreViewModel(IDesignRepository guiRepository)
+        public ExploreViewModel(IDesignerRepository guiRepository)
         {
-            var exploreTree = guiRepository.Explores.Get();
+            var exploreTree = guiRepository.Layouts.Get();
             MakeDemoModel();
         }
 

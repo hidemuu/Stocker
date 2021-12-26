@@ -59,7 +59,7 @@ namespace Stocker.Wpf.Views.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;V1.0.0.0;component/dialogs/alertdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;component/dialogs/alertdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\AlertDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

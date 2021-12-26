@@ -22,6 +22,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Account.Models;
+using Account.Repository.Xml;
 
 namespace Stocker.Wpf
 {
@@ -51,8 +53,9 @@ namespace Stocker.Wpf
             //リポジトリの登録
             var rootPath = PathHelper.GetCurrentRootPath("Stocker");
             containerRegistry.RegisterInstance<IStockerRepository>(new SqlStockerRepository(new DbContextOptionsBuilder<StockerDbContext>().UseSqlite(@"Data Source=" + rootPath + @"assets\db.sqlite")));
-            containerRegistry.RegisterInstance<ISettingRepository>(new XmlSettingRepository(rootPath + @"assets\settings\"));
-            containerRegistry.RegisterInstance<IDesignRepository>(new XmlDesignRepository(rootPath + @"assets\guis\"));
+            containerRegistry.RegisterInstance<IConfiguratorRepository>(new XmlConfiguratorRepository(rootPath + @"assets\configurator\"));
+            containerRegistry.RegisterInstance<IDesignerRepository>(new XmlDesignerRepository(rootPath + @"assets\designer\"));
+            containerRegistry.RegisterInstance<IAccountRepository>(new XmlAccountRepository(rootPath + @"assets\account\"));
 
             //サービスの登録
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());

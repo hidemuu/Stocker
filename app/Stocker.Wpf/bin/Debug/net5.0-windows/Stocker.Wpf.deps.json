@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf/1.0.0": {
         "dependencies": {
+          "Account.Repository": "1.0.0",
           "Configurator.Repository": "1.0.0",
           "Designer.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.17",
@@ -587,8 +588,26 @@
           "Accessors.dll": {}
         }
       },
+      "Account.Models/1.0.0": {
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "runtime": {
+          "Account.Models.dll": {}
+        }
+      },
+      "Account.Repository/1.0.0": {
+        "dependencies": {
+          "Accessors": "1.0.0",
+          "Account.Models": "1.0.0"
+        },
+        "runtime": {
+          "Account.Repository.dll": {}
+        }
+      },
       "Configurator.Models/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
@@ -608,6 +627,7 @@
       },
       "Designer.Models/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
@@ -655,6 +675,7 @@
       },
       "Stocker.Wpf.ViewModels/1.0.0": {
         "dependencies": {
+          "Account.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
           "Stocker.Wpf.Views": "1.0.0"
         },
@@ -1091,6 +1112,16 @@
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
     },
     "Accessors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Account.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Account.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

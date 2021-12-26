@@ -66,7 +66,7 @@ namespace Stocker.Wpf.Views.Login {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;V1.0.0.0;component/login/loginwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;component/login/loginwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Login\LoginWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

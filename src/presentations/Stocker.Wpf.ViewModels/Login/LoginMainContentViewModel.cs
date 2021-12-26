@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using Account.Models;
 
 namespace Stocker.Wpf.ViewModels.Login
 {

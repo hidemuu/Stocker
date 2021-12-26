@@ -47,9 +47,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Models", "src\dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Repository", "src\applications\Scheduler.Repository\Scheduler.Repository.csproj", "{FC8AF68B-88D6-41AF-89D7-7796387B59FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocker.React", "app\Stocker.React\Stocker.React.csproj", "{C78A073A-D94B-40B0-81BC-9F5B145F9DE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.React", "app\Stocker.React\Stocker.React.csproj", "{C78A073A-D94B-40B0-81BC-9F5B145F9DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocker.Asp", "app\Stocker.Asp\Stocker.Asp.csproj", "{A54276E0-78B7-4E6D-A873-63C22C84D42D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Asp", "app\Stocker.Asp\Stocker.Asp.csproj", "{A54276E0-78B7-4E6D-A873-63C22C84D42D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Models", "src\domains\Account.Models\Account.Models.csproj", "{5CB0D466-2570-41E0-81F2-E7D3E488185C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Repository", "src\applications\Account.Repository\Account.Repository.csproj", "{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{A54276E0-78B7-4E6D-A873-63C22C84D42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A54276E0-78B7-4E6D-A873-63C22C84D42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A54276E0-78B7-4E6D-A873-63C22C84D42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB0D466-2570-41E0-81F2-E7D3E488185C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB0D466-2570-41E0-81F2-E7D3E488185C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB0D466-2570-41E0-81F2-E7D3E488185C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB0D466-2570-41E0-81F2-E7D3E488185C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +168,8 @@ Global
 		{FC8AF68B-88D6-41AF-89D7-7796387B59FB} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
 		{C78A073A-D94B-40B0-81BC-9F5B145F9DE0} = {69485442-7149-4C5C-8B9C-7C5CA505D5F5}
 		{A54276E0-78B7-4E6D-A873-63C22C84D42D} = {69485442-7149-4C5C-8B9C-7C5CA505D5F5}
+		{5CB0D466-2570-41E0-81F2-E7D3E488185C} = {B3A0A95F-8BDD-4B48-819A-07D391B6AFCB}
+		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47E61B4F-17B8-49B1-9BFD-A7A2AEBE05EE}

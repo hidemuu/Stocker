@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\domains\Account.Models\Account.Models.csproj" />
     <ProjectReference Include="..\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
   </ItemGroup>
 

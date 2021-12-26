@@ -413,6 +413,7 @@
       },
       "Designer.Models/1.0.0": {
         "dependencies": {
+          "Accessors": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {

@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\applications\Account.Repository\Account.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Configurator.Repository\Configurator.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Stocker.UiRepository\Designer.Repository.csproj" />

@@ -59,7 +59,7 @@ namespace Stocker.Wpf.Views.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;V1.0.0.0;component/dialogs/dialogwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;component/dialogs/dialogwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\DialogWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

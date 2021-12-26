@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 22-83717889
 
 23810396724
-215668893277
+2172065872752
 Customs\CustomView.xaml;Dialogs\AlertDialog.xaml;Dialogs\DialogWindow.xaml;Dialogs\SuccessDialog.xaml;Dialogs\WarningDialog.xaml;Login\CreateAccount.xaml;Login\LoginMainContent.xaml;Login\LoginWindow.xaml;MainWindow.xaml;Panels\Contents\CustomerTableView.xaml;Panels\Contents\DashboardView.xaml;Panels\Contents\ExploreView.xaml;Panels\Contents\LineItemTableView.xaml;Panels\Contents\OrderChartView.xaml;Panels\Contents\OrderTableView.xaml;Panels\Contents\ProductChartView.xaml;Panels\Contents\ProductTableView.xaml;Panels\Contents\PropertyView.xaml;Panels\Contents\SettingView.xaml;Panels\Footers\GuideView.xaml;Panels\Headers\MenuView.xaml;Panels\Headers\ToolView.xaml;
 
 False

@@ -70,3 +70,5 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Stocker.Wpf.Views.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\ref\Stocker.Wpf.Views.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\obj\Debug\net5.0-windows\Stocker.Wpf.Views.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Accessors.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\bin\Debug\net5.0-windows\Accessors.pdb

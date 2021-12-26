@@ -53,7 +53,7 @@ namespace Stocker.Wpf.Views.Panels {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;V1.0.0.0;component/customs/customview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Stocker.Wpf.Views;component/customs/customview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Customs\CustomView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
