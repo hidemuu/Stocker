@@ -24,6 +24,10 @@ using System.Threading.Tasks;
 using System.Windows;
 using Account.Models;
 using Account.Repository.Xml;
+using Stocker.Wpf.Views.Dialogs;
+using Stocker.Wpf.ViewModels.Dialogs;
+using Stocker.Wpf.Views.Login;
+using Stocker.Wpf.ViewModels.Login;
 
 namespace Stocker.Wpf
 {
@@ -61,6 +65,8 @@ namespace Stocker.Wpf
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());
 
             //Viewの登録
+            containerRegistry.RegisterForNavigation<LoginMainContent>();
+            containerRegistry.RegisterForNavigation<CreateAccount>();
             containerRegistry.RegisterForNavigation<DashboardView>();
             containerRegistry.RegisterForNavigation<ToolView>();
             containerRegistry.RegisterForNavigation<ExploreView>();
@@ -74,7 +80,10 @@ namespace Stocker.Wpf
             containerRegistry.RegisterForNavigation<SettingView>();
 
             //Dialogの登録
-            //containerRegistry.RegisterDialog<GameOverDialog, GameOverDialogViewModel>();
+            containerRegistry.RegisterDialog<AlertDialog, AlertDialogViewModel>();
+            containerRegistry.RegisterDialog<SuccessDialog, SuccessDialogViewModel>();
+            containerRegistry.RegisterDialog<WarningDialog, WarningDialogViewModel>();
+            containerRegistry.RegisterDialogWindow<DialogWindow>();
         }
 
         protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
@@ -89,6 +98,8 @@ namespace Stocker.Wpf
         {
             base.ConfigureViewModelLocator();
 
+            ViewModelLocationProvider.Register<LoginWindow, LoginWindowViewModel>();
+            ViewModelLocationProvider.Register<LoginMainContent, LoginMainContentViewModel>();
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
             ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();
             ViewModelLocationProvider.Register<ToolView, ToolViewModel>();
