@@ -6,5 +6,6 @@ namespace Configurator.Models
 {
     public interface IConfiguratorRepository
     {
+        IUserSettingRepository UserSettings { get; }
     }
 }

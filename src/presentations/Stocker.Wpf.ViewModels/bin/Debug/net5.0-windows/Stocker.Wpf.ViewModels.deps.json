@@ -8,9 +8,10 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf.ViewModels/1.0.0": {
         "dependencies": {
-          "Account.Models": "1.0.0",
+          "Authorizer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
-          "Stocker.Wpf.Views": "1.0.0"
+          "Stocker.Wpf.Models": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.ViewModels.dll": {}
@@ -234,12 +235,12 @@
           "Accessors.dll": {}
         }
       },
-      "Account.Models/1.0.0": {
+      "Authorizer.Models/1.0.0": {
         "dependencies": {
           "Accessors": "1.0.0"
         },
         "runtime": {
-          "Account.Models.dll": {}
+          "Authorizer.Models.dll": {}
         }
       },
       "Configurator.Models/1.0.0": {
@@ -260,6 +261,14 @@
           "Designer.Models.dll": {}
         }
       },
+      "Language.Models/1.0.0": {
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "runtime": {
+          "Language.Models.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -271,21 +280,15 @@
       },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
+          "Authorizer.Models": "1.0.0",
           "Configurator.Models": "1.0.0",
           "Designer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
           "WpfControls": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Models.dll": {}
-        }
-      },
-      "Stocker.Wpf.Views/1.0.0": {
-        "dependencies": {
-          "Stocker.Wpf.Models": "1.0.0"
-        },
-        "runtime": {
-          "Stocker.Wpf.Views.dll": {}
         }
       },
       "Utilities/1.0.0": {
@@ -489,7 +492,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Account.Models/1.0.0": {
+    "Authorizer.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -504,17 +507,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Language.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Stocker.Wpf.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Stocker.Wpf.Views/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

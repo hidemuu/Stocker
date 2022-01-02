@@ -8,18 +8,20 @@ namespace Accessors
 {
     public class JsonFileHelper : IFileHelper
     {
-        private string _fileName;
-        private string _encode;
+        private const string EXTENSION = ".json";
+        private string path;
+        private Encoding encoding;
 
         /// <summary>
         /// コンストラクタ
         /// </summary>
         /// <param name="fileName">ファイル名</param>
         /// <param name="encode">エンコード</param>
-        public JsonFileHelper(string fileName, string encode)
+        public JsonFileHelper(string path, string encoding)
         {
-            _fileName = fileName;
-            _encode = encode;
+            this.path = path;
+            if (string.IsNullOrEmpty(Path.GetExtension(path))) this.path += EXTENSION;
+            this.encoding = Encoding.GetEncoding(encoding);
         }
 
         /// <summary>
@@ -49,7 +51,7 @@ namespace Accessors
 
         private string ReadStream()
         {
-            using (var stream = new StreamReader(_fileName, new UTF8Encoding(false)))
+            using (var stream = new StreamReader(this.path, encoding))
             {
                 if (stream != null)
                 {
@@ -66,7 +68,7 @@ namespace Accessors
         /// <param name="isappend">追記モード（falseなら上書き保存）</param>
         private void WriteStream(string json, bool isappend)
         {
-            using (var stream = new StreamWriter(_fileName, isappend, new UTF8Encoding(false)))
+            using (var stream = new StreamWriter(this.path, isappend, encoding))
             {
                 if (stream != null)
                 {

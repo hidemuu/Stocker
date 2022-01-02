@@ -253,6 +253,19 @@
           "bin/placeholder/Accessors.dll": {}
         }
       },
+      "Authorizer.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Authorizer.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Authorizer.Models.dll": {}
+        }
+      },
       "Configurator.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -281,6 +294,19 @@
           "bin/placeholder/Designer.Models.dll": {}
         }
       },
+      "Language.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Language.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Language.Models.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -299,8 +325,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Authorizer.Models": "1.0.0",
           "Configurator.Models": "1.0.0",
           "Designer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
           "WpfControls": "1.0.0"
         },
@@ -879,6 +907,11 @@
       "path": "../../infrastructures/Accessors/Accessors.csproj",
       "msbuildProject": "../../infrastructures/Accessors/Accessors.csproj"
     },
+    "Authorizer.Models/1.0.0": {
+      "type": "project",
+      "path": "../../domains/Authorizer.Models/Authorizer.Models.csproj",
+      "msbuildProject": "../../domains/Authorizer.Models/Authorizer.Models.csproj"
+    },
     "Configurator.Models/1.0.0": {
       "type": "project",
       "path": "../../domains/Configurator.Models/Configurator.Models.csproj",
@@ -888,6 +921,11 @@
       "type": "project",
       "path": "../../domains/Designer.Models/Designer.Models.csproj",
       "msbuildProject": "../../domains/Designer.Models/Designer.Models.csproj"
+    },
+    "Language.Models/1.0.0": {
+      "type": "project",
+      "path": "../../domains/Language.Models/Language.Models.csproj",
+      "msbuildProject": "../../domains/Language.Models/Language.Models.csproj"
     },
     "Stocker.Models/1.0.0": {
       "type": "project",

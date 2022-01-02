@@ -26,7 +26,7 @@ namespace Stocker.Wpf.ViewModels.Login
 
         void ExecuteLoginLoadingCommand()
         {
-            RegionManager.RequestNavigate(RegionNames.LoginRegion, "LoginMainContent");
+            RegionManager.RequestNavigate(RegionNames.LOGIN, "LoginMainContent");
             //IRegion region = RegionManager.Regions[RegionNames.LoginRegion];
             //region.RequestNavigate("LoginMainContent", NavigationCompelted);
             //Global.AllUsers = userService.GetAllUsers();

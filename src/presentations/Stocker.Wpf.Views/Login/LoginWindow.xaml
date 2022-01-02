@@ -25,6 +25,6 @@
         <ContentControl
             Margin="5"
             prism:RegionManager.RegionManager="{Binding RegionManager}"
-            prism:RegionManager.RegionName="{x:Static constants:RegionNames.LoginRegion}" />
+            prism:RegionManager.RegionName="{x:Static constants:RegionNames.LOGIN}" />
     </Grid>
 </Window>

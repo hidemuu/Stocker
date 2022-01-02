@@ -735,31 +735,31 @@
           "bin/placeholder/Accessors.dll": {}
         }
       },
-      "Account.Models/1.0.0": {
+      "Authorizer.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Accessors": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Account.Models.dll": {}
+          "bin/placeholder/Authorizer.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Account.Models.dll": {}
+          "bin/placeholder/Authorizer.Models.dll": {}
         }
       },
-      "Account.Repository/1.0.0": {
+      "Authorizer.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Accessors": "1.0.0",
-          "Account.Models": "1.0.0"
+          "Authorizer.Models": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Account.Repository.dll": {}
+          "bin/placeholder/Authorizer.Repository.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Account.Repository.dll": {}
+          "bin/placeholder/Authorizer.Repository.dll": {}
         }
       },
       "Configurator.Models/1.0.0": {
@@ -820,6 +820,32 @@
           "bin/placeholder/Designer.Repository.dll": {}
         }
       },
+      "Language.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Language.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Language.Models.dll": {}
+        }
+      },
+      "Language.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Language.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Language.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Language.Repository.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -853,8 +879,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Authorizer.Models": "1.0.0",
           "Configurator.Models": "1.0.0",
           "Designer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
           "WpfControls": "1.0.0"
         },
@@ -872,9 +900,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Account.Models": "1.0.0",
+          "Authorizer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
-          "Stocker.Wpf.Views": "1.0.0"
+          "Stocker.Wpf.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.Wpf.ViewModels.dll": {}
@@ -2237,15 +2266,15 @@
       "path": "../../src/infrastructures/Accessors/Accessors.csproj",
       "msbuildProject": "../../src/infrastructures/Accessors/Accessors.csproj"
     },
-    "Account.Models/1.0.0": {
+    "Authorizer.Models/1.0.0": {
       "type": "project",
-      "path": "../../src/domains/Account.Models/Account.Models.csproj",
-      "msbuildProject": "../../src/domains/Account.Models/Account.Models.csproj"
+      "path": "../../src/domains/Authorizer.Models/Authorizer.Models.csproj",
+      "msbuildProject": "../../src/domains/Authorizer.Models/Authorizer.Models.csproj"
     },
-    "Account.Repository/1.0.0": {
+    "Authorizer.Repository/1.0.0": {
       "type": "project",
-      "path": "../../src/applications/Account.Repository/Account.Repository.csproj",
-      "msbuildProject": "../../src/applications/Account.Repository/Account.Repository.csproj"
+      "path": "../../src/applications/Authorizer.Repository/Authorizer.Repository.csproj",
+      "msbuildProject": "../../src/applications/Authorizer.Repository/Authorizer.Repository.csproj"
     },
     "Configurator.Models/1.0.0": {
       "type": "project",
@@ -2264,8 +2293,18 @@
     },
     "Designer.Repository/1.0.0": {
       "type": "project",
-      "path": "../../src/applications/Stocker.UiRepository/Designer.Repository.csproj",
-      "msbuildProject": "../../src/applications/Stocker.UiRepository/Designer.Repository.csproj"
+      "path": "../../src/applications/Designer.Repository/Designer.Repository.csproj",
+      "msbuildProject": "../../src/applications/Designer.Repository/Designer.Repository.csproj"
+    },
+    "Language.Models/1.0.0": {
+      "type": "project",
+      "path": "../../src/domains/Language.Models/Language.Models.csproj",
+      "msbuildProject": "../../src/domains/Language.Models/Language.Models.csproj"
+    },
+    "Language.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../src/applications/Language.Repository/Language.Repository.csproj",
+      "msbuildProject": "../../src/applications/Language.Repository/Language.Repository.csproj"
     },
     "Stocker.Models/1.0.0": {
       "type": "project",
@@ -2305,14 +2344,16 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Account.Repository >= 1.0.0",
+      "Authorizer.Repository >= 1.0.0",
       "Configurator.Repository >= 1.0.0",
       "Designer.Repository >= 1.0.0",
+      "Language.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.17",
       "Stocker.Repository >= 1.0.0",
-      "Stocker.Wpf.ViewModels >= 1.0.0"
+      "Stocker.Wpf.ViewModels >= 1.0.0",
+      "Stocker.Wpf.Views >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2352,20 +2393,26 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Account.Repository\\Account.Repository.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Account.Repository\\Account.Repository.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Authorizer.Repository\\Authorizer.Repository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Authorizer.Repository\\Authorizer.Repository.csproj"
             },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Configurator.Repository\\Configurator.Repository.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Configurator.Repository\\Configurator.Repository.csproj"
             },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Designer.Repository\\Designer.Repository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Designer.Repository\\Designer.Repository.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Language.Repository\\Language.Repository.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Language.Repository\\Language.Repository.csproj"
+            },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.Repository\\Stocker.Repository.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.Repository\\Stocker.Repository.csproj"
             },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Designer.Repository.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\applications\\Stocker.UiRepository\\Designer.Repository.csproj"
-            },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj"
             }
           }
         }

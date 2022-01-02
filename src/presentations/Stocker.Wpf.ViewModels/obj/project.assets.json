@@ -312,17 +312,17 @@
           "bin/placeholder/Accessors.dll": {}
         }
       },
-      "Account.Models/1.0.0": {
+      "Authorizer.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Accessors": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Account.Models.dll": {}
+          "bin/placeholder/Authorizer.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Account.Models.dll": {}
+          "bin/placeholder/Authorizer.Models.dll": {}
         }
       },
       "Configurator.Models/1.0.0": {
@@ -353,6 +353,19 @@
           "bin/placeholder/Designer.Models.dll": {}
         }
       },
+      "Language.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Accessors": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Language.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Language.Models.dll": {}
+        }
+      },
       "Stocker.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -371,8 +384,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Authorizer.Models": "1.0.0",
           "Configurator.Models": "1.0.0",
           "Designer.Models": "1.0.0",
+          "Language.Models": "1.0.0",
           "Stocker.Models": "1.0.0",
           "WpfControls": "1.0.0"
         },
@@ -381,22 +396,6 @@
         },
         "runtime": {
           "bin/placeholder/Stocker.Wpf.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
-      "Stocker.Wpf.Views/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Stocker.Wpf.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stocker.Wpf.Views.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stocker.Wpf.Views.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -1115,10 +1114,10 @@
       "path": "../../infrastructures/Accessors/Accessors.csproj",
       "msbuildProject": "../../infrastructures/Accessors/Accessors.csproj"
     },
-    "Account.Models/1.0.0": {
+    "Authorizer.Models/1.0.0": {
       "type": "project",
-      "path": "../../domains/Account.Models/Account.Models.csproj",
-      "msbuildProject": "../../domains/Account.Models/Account.Models.csproj"
+      "path": "../../domains/Authorizer.Models/Authorizer.Models.csproj",
+      "msbuildProject": "../../domains/Authorizer.Models/Authorizer.Models.csproj"
     },
     "Configurator.Models/1.0.0": {
       "type": "project",
@@ -1130,6 +1129,11 @@
       "path": "../../domains/Designer.Models/Designer.Models.csproj",
       "msbuildProject": "../../domains/Designer.Models/Designer.Models.csproj"
     },
+    "Language.Models/1.0.0": {
+      "type": "project",
+      "path": "../../domains/Language.Models/Language.Models.csproj",
+      "msbuildProject": "../../domains/Language.Models/Language.Models.csproj"
+    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "path": "../../domains/Stocker.Models/Stocker.Models.csproj",
@@ -1139,11 +1143,6 @@
       "type": "project",
       "path": "../Stocker.Wpf.Models/Stocker.Wpf.Models.csproj",
       "msbuildProject": "../Stocker.Wpf.Models/Stocker.Wpf.Models.csproj"
-    },
-    "Stocker.Wpf.Views/1.0.0": {
-      "type": "project",
-      "path": "../Stocker.Wpf.Views/Stocker.Wpf.Views.csproj",
-      "msbuildProject": "../Stocker.Wpf.Views/Stocker.Wpf.Views.csproj"
     },
     "Utilities/1.0.0": {
       "type": "project",
@@ -1158,9 +1157,10 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Account.Models >= 1.0.0",
+      "Authorizer.Models >= 1.0.0",
+      "Language.Models >= 1.0.0",
       "Prism.Unity >= 8.1.97",
-      "Stocker.Wpf.Views >= 1.0.0"
+      "Stocker.Wpf.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1200,11 +1200,14 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Account.Models\\Account.Models.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Account.Models\\Account.Models.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Authorizer.Models\\Authorizer.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Authorizer.Models\\Authorizer.Models.csproj"
             },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj"
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Language.Models\\Language.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\domains\\Language.Models\\Language.Models.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Models\\Stocker.Wpf.Models.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Models\\Stocker.Wpf.Models.csproj"
             }
           }
         }

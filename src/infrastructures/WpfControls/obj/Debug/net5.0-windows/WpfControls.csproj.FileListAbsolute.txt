@@ -27,7 +27,6 @@ C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\bin\Debu
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\bin\Debug\net5.0-windows\WpfControls.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\bin\Debug\net5.0-windows\ref\WpfControls.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\bin\Debug\net5.0-windows\WpfControls.pdb
-C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\WpfControls.csproj.AssemblyReference.cache
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Styles\BaseStyles.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Styles\ButtonStyles.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Styles\ChipBorderStyles.baml
@@ -70,3 +69,4 @@ C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debu
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Styles\Atoms\TreeView.baml
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Components\ExpanderCard.g.cs
 C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\Components\ExpanderCard.baml
+C:\Users\nando\Documents\GitHub\Stocker\src\infrastructures\WpfControls\obj\Debug\net5.0-windows\WpfControls.csproj.AssemblyReference.cache

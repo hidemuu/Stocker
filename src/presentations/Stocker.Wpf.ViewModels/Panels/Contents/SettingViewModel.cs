@@ -1,6 +1,7 @@
 ﻿using MaterialDesignColors;
 using Prism.Mvvm;
 using Reactive.Bindings;
+using Stocker.Wpf.Models;
 using Stocker.Wpf.ViewModels.Services;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Stocker.Wpf.ViewModels.Panels
 {
-    public class SettingViewModel : BindableBase
+    public class SettingViewModel : BindableBase, ISettingViewModel
     {
 
         #region プロパティ

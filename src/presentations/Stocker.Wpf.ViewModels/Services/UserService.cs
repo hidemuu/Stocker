@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Account.Models;
+using Authorizer.Models;
 
 namespace Stocker.Wpf.ViewModels.Services
 {

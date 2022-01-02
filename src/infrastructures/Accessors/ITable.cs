@@ -6,6 +6,6 @@ namespace Accessors
 {
     public interface ITable<T>
     {
-        IEnumerable<T> Items { get; set; }
+        List<T> Items { get; set; }
     }
 }

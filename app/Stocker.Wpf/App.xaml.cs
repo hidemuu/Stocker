@@ -9,7 +9,7 @@ using Designer.Repository.Xml;
 using Stocker.Models;
 using Stocker.Repository.Sql;
 using Configurator.Models;
-using Configurator.Repository.Xml;
+using Configurator.Repository;
 using Utilities;
 using Stocker.Wpf.ViewModels;
 using Stocker.Wpf.ViewModels.Panels;
@@ -22,12 +22,17 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using Account.Models;
-using Account.Repository.Xml;
+using Authorizer.Models;
+using Authorizer.Repository;
 using Stocker.Wpf.Views.Dialogs;
 using Stocker.Wpf.ViewModels.Dialogs;
 using Stocker.Wpf.Views.Login;
 using Stocker.Wpf.ViewModels.Login;
+using Language.Repository;
+using Language.Models;
+using System.IO;
+using Stocker.Wpf.Views.Panels.Contents;
+using Stocker.Wpf.ViewModels.Panels.Contents;
 
 namespace Stocker.Wpf
 {
@@ -56,10 +61,12 @@ namespace Stocker.Wpf
 
             //リポジトリの登録
             var rootPath = PathHelper.GetCurrentRootPath("Stocker");
-            containerRegistry.RegisterInstance<IStockerRepository>(new SqlStockerRepository(new DbContextOptionsBuilder<StockerDbContext>().UseSqlite(@"Data Source=" + rootPath + @"assets\db.sqlite")));
-            containerRegistry.RegisterInstance<IConfiguratorRepository>(new XmlConfiguratorRepository(rootPath + @"assets\configurator\"));
-            containerRegistry.RegisterInstance<IDesignerRepository>(new XmlDesignerRepository(rootPath + @"assets\designer\"));
-            containerRegistry.RegisterInstance<IAccountRepository>(new XmlAccountRepository(rootPath + @"assets\account\"));
+            var assetPath = Path.Combine(rootPath, "assets");
+            containerRegistry.RegisterInstance<IStockerRepository>(new SqlStockerRepository(new DbContextOptionsBuilder<StockerDbContext>().UseSqlite(@"Data Source=" + Path.Combine(assetPath, "db.sqlite"))));
+            containerRegistry.RegisterInstance<IConfiguratorRepository>(new ConfiguratorRepository(Path.Combine(assetPath, "configurator"), Accessors.FileType.Json));
+            containerRegistry.RegisterInstance<IDesignerRepository>(new DesignerRepository(Path.Combine(assetPath, "designer"), Accessors.FileType.Xml));
+            containerRegistry.RegisterInstance<IAuthorizerRepository>(new AuthorizerRepository(Path.Combine(assetPath, "authorizer"), Accessors.FileType.Json));
+            containerRegistry.RegisterInstance<ILanguageRepository>(new LanguageRepository(Path.Combine(assetPath, "language"), Accessors.FileType.Json));
 
             //サービスの登録
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());
@@ -69,14 +76,10 @@ namespace Stocker.Wpf
             containerRegistry.RegisterForNavigation<CreateAccount>();
             containerRegistry.RegisterForNavigation<DashboardView>();
             containerRegistry.RegisterForNavigation<ToolView>();
-            containerRegistry.RegisterForNavigation<ExploreView>();
-            containerRegistry.RegisterForNavigation<PropertyView>();
-            containerRegistry.RegisterForNavigation<ProductTableView>();
-            containerRegistry.RegisterForNavigation<ProductChartView>();
-            containerRegistry.RegisterForNavigation<OrderTableView>();
-            containerRegistry.RegisterForNavigation<CustomerTableView>();
-            containerRegistry.RegisterForNavigation<LineItemTableView>();
-            containerRegistry.RegisterForNavigation<CustomView>();
+            containerRegistry.RegisterForNavigation<TreeTableView>();
+            containerRegistry.RegisterForNavigation<LayoutView>();
+            containerRegistry.RegisterForNavigation<TableView>();
+            containerRegistry.RegisterForNavigation<ChartView>();
             containerRegistry.RegisterForNavigation<SettingView>();
 
             //Dialogの登録
@@ -103,14 +106,10 @@ namespace Stocker.Wpf
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
             ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();
             ViewModelLocationProvider.Register<ToolView, ToolViewModel>();
-            ViewModelLocationProvider.Register<ExploreView, ExploreViewModel>();
-            ViewModelLocationProvider.Register<PropertyView, PropertyViewModel>();
-            ViewModelLocationProvider.Register<ProductTableView, ProductTableViewModel>();
-            ViewModelLocationProvider.Register<ProductChartView, ProductChartViewModel>();
-            ViewModelLocationProvider.Register<OrderTableView, OrderTableViewModel>();
-            ViewModelLocationProvider.Register<CustomerTableView, CustomerTableViewModel>();
-            ViewModelLocationProvider.Register<LineItemTableView, LineItemTableViewModel>();
-            ViewModelLocationProvider.Register<CustomView, CustomViewModel>();
+            ViewModelLocationProvider.Register<TreeTableView, TreeTableViewModel>();
+            ViewModelLocationProvider.Register<LayoutView, LayoutViewModel>();
+            ViewModelLocationProvider.Register<TableView, TableViewModel>();
+            ViewModelLocationProvider.Register<ChartView, ChartViewModel>();
             ViewModelLocationProvider.Register<SettingView, SettingViewModel>();
         }
 

@@ -8,12 +8,12 @@ namespace Stocker.Wpf.Models.Constants
 {
     public static class RegionNames
     {
-        public const string MenuBarRegion = "MenuBarRegion";
-        public const string ToolBarRegion = "ToolBarRegion";
-        public const string ExploreRegion = "ExploreRegion";
-        public const string PropertyRegion = "PropertyRegion";
-        public const string StatusBarRegion = "StatusBarRegion";
-        public const string ContentRegion = "ContentRegion";
-        public const string LoginRegion = "LoginRegion";
+        public const string MENU_BAR = "MenuBarRegion";
+        public const string TOOL_BAR = "ToolBarRegion";
+        public const string LEFT_CONTENT = "LeftContentRegion";
+        public const string RIGHT_CONTENT = "RightContentRegion";
+        public const string FOOTER = "FooterRegion";
+        public const string CENTER_CONTENT = "CenterContentRegion";
+        public const string LOGIN = "LoginRegion";
     }
 }

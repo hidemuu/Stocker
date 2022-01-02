@@ -5,7 +5,6 @@ using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
 using Stocker.Wpf.Models;
 using Stocker.Wpf.Models.Constants;
-using Stocker.Wpf.Views.Panels;
 using System;
 using System.Linq;
 using System.Reactive.Concurrency;
@@ -34,12 +33,11 @@ namespace Stocker.Wpf.ViewModels
             this.RegionManager = regionManager;
             this.dialogService = dialogService;
 
-            Models.Add(new MainWindowModel(0, "Dashboard", "Home", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(DashboardView))));
-            Models.Add(new MainWindowModel(1, "Product", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(ProductTableView))));
-            Models.Add(new MainWindowModel(2, "Product", "Chart", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(ProductChartView))));
-            Models.Add(new MainWindowModel(3, "Order", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(OrderTableView))));
-            Models.Add(new MainWindowModel(4, "Customer", "Table", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(CustomerTableView))));
-            Models.Add(new MainWindowModel(5, "Setting", "Cog", () => this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(SettingView))));
+            Models.Add(new MainWindowModel(0, "Dashboard", "Home", () => this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "DashboardView")));
+            Models.Add(new MainWindowModel(1, "Table", "Table", () => this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "TableView")));
+            Models.Add(new MainWindowModel(2, "Chart", "Graph", () => this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "ChartView")));
+            Models.Add(new MainWindowModel(3, "Tree", "Tree", () => this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "TreeTableView")));
+            Models.Add(new MainWindowModel(4, "Setting", "Cog", () => this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "SettingView")));
 
             LoadedCommand.Subscribe(() => OnLoaded());
             TabChangeCommand.Subscribe(_ => OnChangeTab());
@@ -57,10 +55,10 @@ namespace Stocker.Wpf.ViewModels
 
         private void OnLoaded()
         {
-            this.RegionManager.RequestNavigate(RegionNames.ToolBarRegion, nameof(ToolView));
-            this.RegionManager.RequestNavigate(RegionNames.PropertyRegion, nameof(PropertyView));
-            this.RegionManager.RequestNavigate(RegionNames.ExploreRegion, nameof(ExploreView));
-            this.RegionManager.RequestNavigate(RegionNames.ContentRegion, nameof(DashboardView));
+            this.RegionManager.RequestNavigate(RegionNames.TOOL_BAR, "ToolView");
+            this.RegionManager.RequestNavigate(RegionNames.RIGHT_CONTENT, "LayoutView");
+            //this.RegionManager.RequestNavigate(RegionNames.LEFT_CONTENT, "TreeTableView");
+            this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "DashboardView");
         }
 
         private void OnChangeTab()

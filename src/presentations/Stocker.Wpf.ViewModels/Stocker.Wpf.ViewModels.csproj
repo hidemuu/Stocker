@@ -10,8 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\domains\Account.Models\Account.Models.csproj" />
-    <ProjectReference Include="..\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
+    <ProjectReference Include="..\..\domains\Authorizer.Models\Authorizer.Models.csproj" />
+    <ProjectReference Include="..\..\domains\Language.Models\Language.Models.csproj" />
+    <ProjectReference Include="..\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj" />
   </ItemGroup>
 
 </Project>

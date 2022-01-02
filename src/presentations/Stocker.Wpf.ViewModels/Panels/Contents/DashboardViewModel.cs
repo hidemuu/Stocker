@@ -1,8 +1,6 @@
 ﻿using Prism.Mvvm;
 using Prism.Regions;
 using Reactive.Bindings;
-using Stocker.Wpf.Views;
-using Stocker.Wpf.Views.Login;
 using WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
@@ -39,7 +37,7 @@ namespace Stocker.Wpf.ViewModels.Panels
         public DashboardViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
-            LoginCommand.Subscribe(() => ShellSwitcher.Switch<MainWindow, LoginWindow>());
+            //LoginCommand.Subscribe(() => ShellSwitcher.Switch<MainWindow, LoginWindow>());
         }
 
     }

@@ -20,11 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\applications\Account.Repository\Account.Repository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Authorizer.Repository\Authorizer.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Configurator.Repository\Configurator.Repository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Designer.Repository\Designer.Repository.csproj" />
+    <ProjectReference Include="..\..\src\applications\Language.Repository\Language.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Stocker.UiRepository\Designer.Repository.csproj" />
     <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.ViewModels\Stocker.Wpf.ViewModels.csproj" />
+    <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
   </ItemGroup>
 
 </Project>

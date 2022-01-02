@@ -5,8 +5,6 @@ using Prism.Services.Dialogs;
 using Designer.Models;
 using Configurator.Models;
 using Stocker.Wpf.Models.Constants;
-using Stocker.Wpf.Views;
-using Stocker.Wpf.Views.Login;
 using WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
@@ -14,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using Account.Models;
+using Authorizer.Models;
 
 namespace Stocker.Wpf.ViewModels.Login
 {
@@ -74,7 +72,7 @@ namespace Stocker.Wpf.ViewModels.Login
             //    dialogService.Show("WarningDialog", new DialogParameters($"message={"LoginIdかPasswordが一致しません!"}"), null);
             //    return;
             //}
-            ShellSwitcher.Switch<LoginWindow, MainWindow>();
+            //ShellSwitcher.Switch<LoginWindow, MainWindow>();
         }
 
         private void ExecuteGoForwardCommand()
@@ -91,7 +89,7 @@ namespace Stocker.Wpf.ViewModels.Login
         private void Navigate(string navigatePath)
         {
             if (navigatePath != null)
-                regionManager.RequestNavigate(RegionNames.LoginRegion, navigatePath);
+                regionManager.RequestNavigate(RegionNames.LOGIN, navigatePath);
         }
 
 

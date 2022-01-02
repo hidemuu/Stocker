@@ -1,0 +1,50 @@
+﻿<UserControl
+    x:Class="Stocker.Wpf.Views.Panels.TreeTableView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    xmlns:vm="clr-namespace:Stocker.Wpf.Models.Trees;assembly=Stocker.Wpf.Models"
+    d:DataContext="{d:DesignInstance vm:ITreeTableViewModel}"
+    d:DesignHeight="450"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--<StackPanel Grid.Row="0" Background="Black">
+            <TextBlock Text="Explore" Foreground="White"></TextBlock>
+        </StackPanel>-->
+        <TreeView
+            x:Name="RootTree"
+            Grid.Row="1"
+            ItemsSource="{Binding Models}">
+            <TreeView.Resources>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" 
+                            Value="{Binding IsExpanded.Value, Mode=TwoWay}" />
+                </Style>
+            </TreeView.Resources>
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="{Binding Name.Value}" />
+                        <!--<TextBlock Text="{Binding Parent.Name.Value}" Foreground="Black"/>-->
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</UserControl>

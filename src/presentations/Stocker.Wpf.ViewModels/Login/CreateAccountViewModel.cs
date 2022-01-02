@@ -106,7 +106,7 @@ namespace Stocker.Wpf.ViewModels.Login
         private void Navigate(string navigatePath)
         {
             if (navigatePath != null)
-                _regionManager.RequestNavigate(RegionNames.LoginRegion, navigatePath);
+                _regionManager.RequestNavigate(RegionNames.LOGIN, navigatePath);
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)

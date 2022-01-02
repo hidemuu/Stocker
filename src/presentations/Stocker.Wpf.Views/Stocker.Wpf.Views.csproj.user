@@ -2,16 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Panels\Contents\CustomerTableView.xaml.cs">
+    <Compile Update="Panels\Contents\TreeTableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\ExploreView.xaml.cs">
+    <Compile Update="Panels\Contents\TableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Panels\Footers\GuideView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Panels\Contents\LineItemTableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Panels\Contents\DashboardView.xaml.cs">
@@ -20,22 +17,10 @@
     <Compile Update="Panels\Headers\MenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\OrderChartView.xaml.cs">
+    <Compile Update="Panels\Contents\ChartView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\OrderTableView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Panels\Contents\ProductChartView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Panels\Contents\PropertyView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Customs\CustomView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Panels\Contents\ProductTableView.xaml.cs">
+    <Compile Update="Panels\Contents\LayoutView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Panels\Contents\SettingView.xaml.cs">
@@ -70,16 +55,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\CustomerTableView.xaml">
+    <Page Update="Panels\Contents\TreeTableView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\ExploreView.xaml">
+    <Page Update="Panels\Contents\TableView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Panels\Footers\GuideView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Panels\Contents\LineItemTableView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Panels\Contents\DashboardView.xaml">
@@ -88,22 +70,10 @@
     <Page Update="Panels\Headers\MenuView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\OrderChartView.xaml">
+    <Page Update="Panels\Contents\ChartView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\OrderTableView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Panels\Contents\ProductChartView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Panels\Contents\PropertyView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Customs\CustomView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Panels\Contents\ProductTableView.xaml">
+    <Page Update="Panels\Contents\LayoutView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Panels\Contents\SettingView.xaml">

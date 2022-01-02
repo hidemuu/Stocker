@@ -6,19 +6,15 @@ using System.Xml.Serialization;
 namespace Designer.Models
 {
     [XmlRoot("tree")]
-    public class LayoutTree
+    public class LayoutTree : Layout
     {
-        [XmlElement("parent")]
-        public Layout Parent { get; set; }
         [XmlArray("children")]
         [XmlArrayItem("tree")]
         public List<LayoutTree> Children { get; set; }
     }
     [XmlRoot("layout")]
-    public class Layout
+    public class Layout : DbObject
     {
-        [XmlElement("id")]
-        public int Id { get; set; }
         [XmlElement("name")]
         public string Name { get; set; }
         [XmlElement("nodetype")]

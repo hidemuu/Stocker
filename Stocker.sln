@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "src\infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designer.Models", "src\domains\Designer.Models\Designer.Models.csproj", "{C4AAC4AA-C463-4C6F-B588-DF078ACB3193}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designer.Repository", "src\applications\Stocker.UiRepository\Designer.Repository.csproj", "{D11FE08E-0825-4836-B34D-6E45C4502F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designer.Repository", "src\applications\Designer.Repository\Designer.Repository.csproj", "{D11FE08E-0825-4836-B34D-6E45C4502F47}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Configurator.Models", "src\domains\Configurator.Models\Configurator.Models.csproj", "{9BE496F5-C1D0-4CE6-AD56-1B917AB8BFF7}"
 EndProject
@@ -51,9 +51,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.React", "app\Stocke
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocker.Asp", "app\Stocker.Asp\Stocker.Asp.csproj", "{A54276E0-78B7-4E6D-A873-63C22C84D42D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Models", "src\domains\Account.Models\Account.Models.csproj", "{5CB0D466-2570-41E0-81F2-E7D3E488185C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorizer.Models", "src\domains\Authorizer.Models\Authorizer.Models.csproj", "{5CB0D466-2570-41E0-81F2-E7D3E488185C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Repository", "src\applications\Account.Repository\Account.Repository.csproj", "{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorizer.Repository", "src\applications\Authorizer.Repository\Authorizer.Repository.csproj", "{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Language.Models", "src\domains\Language.Models\Language.Models.csproj", "{A1A7083A-E701-4806-8D85-5C0CFD905F55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Language.Repository", "src\applications\Language.Repository\Language.Repository.csproj", "{E432996C-9E3B-4AF1-9332-C5772ED37A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A7083A-E701-4806-8D85-5C0CFD905F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A7083A-E701-4806-8D85-5C0CFD905F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A7083A-E701-4806-8D85-5C0CFD905F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A7083A-E701-4806-8D85-5C0CFD905F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E432996C-9E3B-4AF1-9332-C5772ED37A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E432996C-9E3B-4AF1-9332-C5772ED37A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E432996C-9E3B-4AF1-9332-C5772ED37A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E432996C-9E3B-4AF1-9332-C5772ED37A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +182,8 @@ Global
 		{A54276E0-78B7-4E6D-A873-63C22C84D42D} = {69485442-7149-4C5C-8B9C-7C5CA505D5F5}
 		{5CB0D466-2570-41E0-81F2-E7D3E488185C} = {B3A0A95F-8BDD-4B48-819A-07D391B6AFCB}
 		{407DC26E-AC1F-4784-B0DF-51B1D24E3BA0} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
+		{A1A7083A-E701-4806-8D85-5C0CFD905F55} = {B3A0A95F-8BDD-4B48-819A-07D391B6AFCB}
+		{E432996C-9E3B-4AF1-9332-C5772ED37A06} = {E4035370-7985-4BF4-9FB0-82029F5F7B07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47E61B4F-17B8-49B1-9BFD-A7A2AEBE05EE}

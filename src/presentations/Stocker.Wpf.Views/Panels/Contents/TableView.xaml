@@ -1,0 +1,143 @@
+﻿<UserControl
+    x:Class="Stocker.Wpf.Views.Panels.Contents.TableView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:WpfControls.Converters;assembly=WpfControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels.Contents"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:vm="clr-namespace:Stocker.Wpf.Models.Tables;assembly=Stocker.Wpf.Models"
+    d:DataContext="{d:DesignInstance vm:ITableViewModel}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <converters:BoolToVisibillityConverter x:Key="boolToVisibillityConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel
+            Grid.Row="0"
+            Height="40"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal">
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickProductCommand}"
+                Content="Product" />
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickOrderCommand}"
+                Content="Order" />
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickCustomerCommand}"
+                Content="Customer" />
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickUserCommand}"
+                Content="User" />
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickUserSettingCommand}"
+                Content="UserSetting" />
+            <Button
+                Width="120"
+                Margin="5"
+                Command="{Binding ClickCommentCommand}"
+                Content="Comment" />
+        </StackPanel>
+        <ListView
+            x:Name="listView"
+            Grid.Row="1"
+            ItemsSource="{Binding Models}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Id.Value}"
+                        Header="{Binding Attribute.Id.Header.Value}" />
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Category.Value}"
+                        Header="{Binding Attribute.Category.Header.Value}" />
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Name.Value}"
+                        Header="{Binding Attribute.Name.Header.Value}" />
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Code.Value}"
+                        Header="{Binding Attribute.Code.Header.Value}" />
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Description.Value}"
+                        Header="{Binding Attribute.Description.Header.Value}" />
+                    <GridViewColumn
+                        Width="100"
+                        DisplayMemberBinding="{Binding Path=Reference.Value}"
+                        Header="{Binding Attribute.Reference.Header.Value}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <!--<DataGrid
+            x:Name="dataGrid"
+            Grid.Row="1"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            EnableColumnVirtualization="True"
+            EnableRowVirtualization="True"
+            ItemsSource="{Binding Models}"
+            ScrollViewer.CanContentScroll="True"
+            VirtualizingStackPanel.IsVirtualizing="True"
+            VirtualizingStackPanel.VirtualizationMode="Standard">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Binding="{Binding Id.Value}"
+                    Header="ID"
+                    Visibility="{Binding Attribute.Id.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+                <DataGridTextColumn
+                    Binding="{Binding Category.Value}"
+                    Header="{Binding Attribute.Category.Header.Value}"
+                    Visibility="{Binding Attribute.Category.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+                <DataGridTextColumn
+                    Binding="{Binding Code.Value}"
+                    Header="{Binding Attribute.Code.Header.Value}"
+                    Visibility="{Binding Attribute.Code.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+                <DataGridTextColumn
+                    Binding="{Binding Name.Value}"
+                    Header="{Binding Attribute.Name.Header.Value}"
+                    Visibility="{Binding Attribute.Name.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+                <DataGridTextColumn
+                    Binding="{Binding Description.Value}"
+                    Header="{Binding Attribute.Description.Header.Value}"
+                    Visibility="{Binding Attribute.Description.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+                <DataGridTextColumn
+                    Binding="{Binding Reference.Value}"
+                    Header="{Binding Attribute.Reference.Header.Value}"
+                    Visibility="{Binding Attribute.Reference.IsVisible.Value, Converter={StaticResource boolToVisibillityConverter}}" />
+            </DataGrid.Columns>
+        </DataGrid>-->
+    </Grid>
+</UserControl>

@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\domains\Authorizer.Models\Authorizer.Models.csproj" />
     <ProjectReference Include="..\..\domains\Configurator.Models\Configurator.Models.csproj" />
     <ProjectReference Include="..\..\domains\Designer.Models\Designer.Models.csproj" />
+    <ProjectReference Include="..\..\domains\Language.Models\Language.Models.csproj" />
     <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
     <ProjectReference Include="..\..\infrastructures\WpfControls\WpfControls.csproj" />
   </ItemGroup>

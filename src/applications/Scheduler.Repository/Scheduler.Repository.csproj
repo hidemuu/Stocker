@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.55.0.2500" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\domains\Scheduler.Models\Scheduler.Models.csproj" />
   </ItemGroup>
 

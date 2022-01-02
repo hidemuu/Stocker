@@ -10,18 +10,20 @@ namespace Accessors
 {
     public class CsvFileHelper
     {
-        private string _fileName;
-        private string _encode;
+        private const string EXTENSION = ".csv";
+        private string path;
+        private Encoding encoding;
 
         /// <summary>
         /// コンストラクタ
         /// </summary>
         /// <param name="fileName">ファイル名</param>
-        /// <param name="encode">エンコード</param>
-        public CsvFileHelper(string fileName, string encode)
+        /// <param name="encoding">エンコード</param>
+        public CsvFileHelper(string path, string encoding)
         {
-            _fileName = fileName;
-            _encode = encode;
+            this.path = path;
+            if (string.IsNullOrEmpty(Path.GetExtension(path))) this.path += EXTENSION;
+            this.encoding = Encoding.GetEncoding(encoding);
         }
 
         /// <summary>
@@ -31,12 +33,12 @@ namespace Accessors
         /// <param name="list"></param>
         public void Write<T>(IEnumerable<T> list)
         {
-            var isExist = File.Exists(_fileName);
+            var isExist = File.Exists(path);
 
             var configuration = new CsvConfiguration(CultureInfo.CurrentCulture);
             configuration.HasHeaderRecord = true;
 
-            using (var sw = new StreamWriter(_fileName, true, new UTF8Encoding(false)))
+            using (var sw = new StreamWriter(path, true, encoding))
             {
                 using (var csv = new CsvWriter(sw, configuration))
                 {
@@ -62,7 +64,7 @@ namespace Accessors
                 PrepareHeaderForMatch = args => args.Header.ToLower(),
             };
 
-            using (var sr = new StreamReader(_fileName, new UTF8Encoding(false)))
+            using (var sr = new StreamReader(path, encoding))
             {
                 using (var csv = new CsvReader(sr, configuration))
                 {
