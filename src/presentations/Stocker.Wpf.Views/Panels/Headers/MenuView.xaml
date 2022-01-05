@@ -5,8 +5,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="450"
+    d:DesignHeight="50"
     d:DesignWidth="800"
     mc:Ignorable="d">
-    <Grid />
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button
+                Margin="10"
+                Command="{Binding LoginCommand}"
+                Content="Login" />
+        </StackPanel>
+    </Grid>
 </UserControl>

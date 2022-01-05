@@ -55,10 +55,12 @@ namespace Stocker.Wpf.ViewModels
 
         private void OnLoaded()
         {
+            this.RegionManager.RequestNavigate(RegionNames.MENU_BAR, "MenuView");
             this.RegionManager.RequestNavigate(RegionNames.TOOL_BAR, "ToolView");
             this.RegionManager.RequestNavigate(RegionNames.RIGHT_CONTENT, "LayoutView");
             //this.RegionManager.RequestNavigate(RegionNames.LEFT_CONTENT, "TreeTableView");
             this.RegionManager.RequestNavigate(RegionNames.CENTER_CONTENT, "DashboardView");
+            this.RegionManager.RequestNavigate(RegionNames.FOOTER, "GuideView");
         }
 
         private void OnChangeTab()

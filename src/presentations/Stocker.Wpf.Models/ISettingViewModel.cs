@@ -14,6 +14,5 @@ namespace Stocker.Wpf.Models
 
         public ReactivePropertySlim<Swatch> SelectedSwatch { get; }
 
-        public ReactivePropertySlim<string> BackupPath { get; }
     }
 }

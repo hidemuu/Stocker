@@ -75,6 +75,7 @@ namespace Stocker.Wpf
             containerRegistry.RegisterForNavigation<LoginMainContent>();
             containerRegistry.RegisterForNavigation<CreateAccount>();
             containerRegistry.RegisterForNavigation<DashboardView>();
+            containerRegistry.RegisterForNavigation<MenuView>();
             containerRegistry.RegisterForNavigation<ToolView>();
             containerRegistry.RegisterForNavigation<TreeTableView>();
             containerRegistry.RegisterForNavigation<LayoutView>();
@@ -105,6 +106,7 @@ namespace Stocker.Wpf
             ViewModelLocationProvider.Register<LoginMainContent, LoginMainContentViewModel>();
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
             ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();
+            ViewModelLocationProvider.Register<MenuView, MenuViewModel>();
             ViewModelLocationProvider.Register<ToolView, ToolViewModel>();
             ViewModelLocationProvider.Register<TreeTableView, TreeTableViewModel>();
             ViewModelLocationProvider.Register<LayoutView, LayoutViewModel>();

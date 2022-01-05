@@ -33,11 +33,9 @@ namespace Stocker.Wpf.ViewModels.Panels
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        /// <param name="eventAggregator">PubSubパターンでイベントの通知と購読を管理することで、ViewModel間の通信を実現</param>
         public DashboardViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
-            //LoginCommand.Subscribe(() => ShellSwitcher.Switch<MainWindow, LoginWindow>());
         }
 
     }

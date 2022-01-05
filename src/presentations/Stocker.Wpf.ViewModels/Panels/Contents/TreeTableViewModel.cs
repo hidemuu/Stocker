@@ -21,7 +21,6 @@ namespace Stocker.Wpf.ViewModels.Panels
             var layoutTree = designerRepository.Layouts.Get();
             Models.Clear();
             Models.Add(new LayoutTreeTableModel(layoutTree));
-            //MakeDemoModel();
         }
 
         public void MakeDemoModel()

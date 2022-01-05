@@ -17,7 +17,6 @@ namespace Stocker.Wpf.ViewModels.Login
     public class LoginWindowViewModel : BindableBase
     {
         public IRegionManager RegionManager { get; }
-        private readonly UserService userService;
         private readonly IDialogService dialogService;
 
         private DelegateCommand _loginLoadingCommand;
@@ -42,10 +41,9 @@ namespace Stocker.Wpf.ViewModels.Login
 
         }
 
-        public LoginWindowViewModel(IRegionManager regionManager, UserService userService, IDialogService dialogService)
+        public LoginWindowViewModel(IRegionManager regionManager, IDialogService dialogService)
         {
             this.RegionManager = regionManager;
-            this.userService = userService;
             this.dialogService = dialogService;
         }
 
