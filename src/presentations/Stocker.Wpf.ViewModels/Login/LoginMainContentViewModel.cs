@@ -2,17 +2,17 @@
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Services.Dialogs;
-using Designer.Models;
-using Configurator.Models;
+using Mov.Designer.Models;
+using Mov.Configurator.Models;
 using Stocker.Wpf.Models.Constants;
-using WpfControls.Helpers;
+using Mov.WpfControls.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using Authorizer.Models;
+using Mov.Authorizer.Models;
 
 namespace Stocker.Wpf.ViewModels.Login
 {

@@ -1,0 +1,9 @@
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\bin\Debug\netstandard2.0\Stocker.Service.deps.json
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\bin\Debug\netstandard2.0\Stocker.Service.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\bin\Debug\netstandard2.0\Stocker.Service.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.AssemblyInfoInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.AssemblyInfo.cs
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.csproj.CoreCompileInputs.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Service\obj\Debug\netstandard2.0\Stocker.Service.csproj.AssemblyReference.cache

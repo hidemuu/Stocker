@@ -1,6 +1,6 @@
 ﻿using Prism.Mvvm;
 using Reactive.Bindings;
-using Designer.Models;
+using Mov.Designer.Models;
 using Stocker.Wpf.Models;
 using Stocker.Wpf.Models.Trees;
 using System;

@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="gong-wpf-dragdrop" Version="3.0.0" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
@@ -14,6 +21,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mov.WpfControls">
+      <HintPath>..\..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\infrastructures\Utilities\Utilities.csproj" />
+    <Reference Include="Mov.Utilities">
+      <HintPath>..\..\..\..\mov\src\drivers\utilities\bin\Debug\netstandard2.0\Mov.Utilities.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

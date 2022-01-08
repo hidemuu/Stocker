@@ -34,16 +34,6 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "Utilities/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Utilities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Utilities.dll": {}
-        }
       }
     }
   },
@@ -217,18 +207,12 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "Utilities/1.0.0": {
-      "type": "project",
-      "path": "../../infrastructures/Utilities/Utilities.csproj",
-      "msbuildProject": "../../infrastructures/Utilities/Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 13.0.1",
-      "Utilities >= 1.0.0"
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
@@ -267,11 +251,7 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Utilities\\Utilities.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\infrastructures\\Utilities\\Utilities.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

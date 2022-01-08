@@ -20,13 +20,65 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\applications\Authorizer.Repository\Authorizer.Repository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Configurator.Repository\Configurator.Repository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Designer.Repository\Designer.Repository.csproj" />
-    <ProjectReference Include="..\..\src\applications\Language.Repository\Language.Repository.csproj" />
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
     <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.ViewModels\Stocker.Wpf.ViewModels.csproj" />
-    <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mov.Accessors">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Accessors.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Authorizer.Models">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Authorizer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Authorizer.Repository">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Authorizer.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Authorizer.Service">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Authorizer.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Configurator.Models">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Configurator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Configurator.Repository">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Configurator.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Configurator.Service">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Configurator.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Designer.Models">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Designer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Designer.Repository">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Designer.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Designer.Service">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Designer.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Scheduler.Models">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Scheduler.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Scheduler.Repository">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Scheduler.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Scheduler.Service">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Scheduler.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Translator.Models">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Translator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Translator.Repository">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Translator.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Translator.Service">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Translator.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Utilities">
+      <HintPath>..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.WpfControls">
+      <HintPath>..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

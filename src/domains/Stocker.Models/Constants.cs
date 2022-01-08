@@ -1,4 +1,4 @@
-﻿using Utilities;
+﻿using Mov.Utilities;
 using System;
 
 namespace Stocker.Models

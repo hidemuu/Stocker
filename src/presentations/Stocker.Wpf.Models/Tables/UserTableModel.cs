@@ -1,4 +1,4 @@
-﻿using Authorizer.Models;
+﻿using Mov.Authorizer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,12 +1,12 @@
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Stocker.Models.deps.json
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Stocker.Models.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Stocker.Models.pdb
-C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Utilities.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Utilities.pdb
-C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.csproj.AssemblyReference.cache
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Mov.Utilities.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\bin\Debug\netstandard2.0\Mov.Utilities.pdb
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.AssemblyInfoInputs.cache
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.AssemblyInfo.cs
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.csproj.CoreCompileInputs.cache
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.csproj.CopyComplete
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\domains\Stocker.Models\obj\Debug\netstandard2.0\Stocker.Models.csproj.AssemblyReference.cache

@@ -2,7 +2,7 @@
     x:Class="Stocker.Wpf.Views.Panels.Contents.TableView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:converters="clr-namespace:WpfControls.Converters;assembly=WpfControls"
+    xmlns:converters="clr-namespace:Mov.WpfControls.Converters;assembly=Mov.WpfControls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels.Contents"
@@ -17,7 +17,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/LayoutStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <converters:BoolToVisibillityConverter x:Key="boolToVisibillityConverter" />
         </ResourceDictionary>

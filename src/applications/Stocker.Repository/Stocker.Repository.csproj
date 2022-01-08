@@ -10,7 +10,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
-    <ProjectReference Include="..\..\infrastructures\Accessors\Accessors.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mov.Accessors">
+      <HintPath>..\..\..\..\mov\src\drivers\accessors\bin\Debug\netstandard2.0\Mov.Accessors.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,13 @@
 ﻿using Prism.Mvvm;
 using Reactive.Bindings;
+using Stocker.Wpf.Views;
+using Stocker.Wpf.Views.Login;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Mov.WpfControls.Helpers;
 
 namespace Stocker.Wpf.ViewModels.Panels
 {
@@ -18,8 +21,7 @@ namespace Stocker.Wpf.ViewModels.Panels
 
         public MenuViewModel()
         {
-            LoginCommand.Subscribe(() => { });
-            //LoginCommand.Subscribe(() => ShellSwitcher.Switch<MainWindow, LoginWindow>());
+            LoginCommand.Subscribe(() => ShellSwitcher.Switch<MainWindow, LoginWindow>());
         }
 
     }

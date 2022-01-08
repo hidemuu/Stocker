@@ -8,16 +8,29 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf/1.0.0": {
         "dependencies": {
-          "Authorizer.Repository": "1.0.0",
-          "Configurator.Repository": "1.0.0",
-          "Designer.Repository": "1.0.0",
-          "Language.Repository": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.17",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.17",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.17",
           "Stocker.Repository": "1.0.0",
           "Stocker.Wpf.ViewModels": "1.0.0",
-          "Stocker.Wpf.Views": "1.0.0"
+          "Mov.Accessors": "1.0.0.0",
+          "Mov.Authorizer.Models": "1.0.0.0",
+          "Mov.Authorizer.Repository": "1.0.0.0",
+          "Mov.Authorizer.Service": "1.0.0.0",
+          "Mov.Configurator.Models": "1.0.0.0",
+          "Mov.Configurator.Repository": "1.0.0.0",
+          "Mov.Configurator.Service": "1.0.0.0",
+          "Mov.Designer.Models": "1.0.0.0",
+          "Mov.Designer.Repository": "1.0.0.0",
+          "Mov.Designer.Service": "1.0.0.0",
+          "Mov.Scheduler.Models": "1.0.0.0",
+          "Mov.Scheduler.Repository": "1.0.0.0",
+          "Mov.Scheduler.Service": "1.0.0.0",
+          "Mov.Translator.Models": "1.0.0.0",
+          "Mov.Translator.Repository": "1.0.0.0",
+          "Mov.Translator.Service": "1.0.0.0",
+          "Mov.Utilities": "1.0.0.0",
+          "Mov.WpfControls": "1.0.0.0"
         },
         "runtime": {
           "Stocker.Wpf.dll": {}
@@ -32,14 +45,6 @@
           "lib/netcoreapp3.1/ControlzEx.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.4.0.50"
-          }
-        }
-      },
-      "CsvHelper/27.2.1": {
-        "runtime": {
-          "lib/net5.0/CsvHelper.dll": {
-            "assemblyVersion": "27.0.0.0",
-            "fileVersion": "27.2.1.0"
           }
         }
       },
@@ -581,90 +586,9 @@
           }
         }
       },
-      "Accessors/1.0.0": {
-        "dependencies": {
-          "CsvHelper": "27.2.1",
-          "Newtonsoft.Json": "13.0.1"
-        },
-        "runtime": {
-          "Accessors.dll": {}
-        }
-      },
-      "Authorizer.Models/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0"
-        },
-        "runtime": {
-          "Authorizer.Models.dll": {}
-        }
-      },
-      "Authorizer.Repository/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0",
-          "Authorizer.Models": "1.0.0"
-        },
-        "runtime": {
-          "Authorizer.Repository.dll": {}
-        }
-      },
-      "Configurator.Models/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0",
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
-        "runtime": {
-          "Configurator.Models.dll": {}
-        }
-      },
-      "Configurator.Repository/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0",
-          "Configurator.Models": "1.0.0",
-          "CsvHelper": "27.2.1",
-          "Newtonsoft.Json": "13.0.1"
-        },
-        "runtime": {
-          "Configurator.Repository.dll": {}
-        }
-      },
-      "Designer.Models/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0",
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
-        "runtime": {
-          "Designer.Models.dll": {}
-        }
-      },
-      "Designer.Repository/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0",
-          "Designer.Models": "1.0.0"
-        },
-        "runtime": {
-          "Designer.Repository.dll": {}
-        }
-      },
-      "Language.Models/1.0.0": {
-        "dependencies": {
-          "Accessors": "1.0.0"
-        },
-        "runtime": {
-          "Language.Models.dll": {}
-        }
-      },
-      "Language.Repository/1.0.0": {
-        "dependencies": {
-          "Language.Models": "1.0.0"
-        },
-        "runtime": {
-          "Language.Repository.dll": {}
-        }
-      },
       "Stocker.Models/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "Utilities": "1.0.0"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "Stocker.Models.dll": {}
@@ -672,7 +596,6 @@
       },
       "Stocker.Repository/1.0.0": {
         "dependencies": {
-          "Accessors": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.17",
           "Stocker.Models": "1.0.0"
         },
@@ -682,12 +605,11 @@
       },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
-          "Authorizer.Models": "1.0.0",
-          "Configurator.Models": "1.0.0",
-          "Designer.Models": "1.0.0",
-          "Language.Models": "1.0.0",
-          "Stocker.Models": "1.0.0",
-          "WpfControls": "1.0.0"
+          "MaterialDesignColors": "2.0.3",
+          "MaterialDesignThemes": "4.2.1",
+          "MaterialDesignThemes.MahApps": "0.1.9",
+          "ReactiveProperty.WPF": "8.0.1",
+          "Stocker.Models": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Models.dll": {}
@@ -695,10 +617,9 @@
       },
       "Stocker.Wpf.ViewModels/1.0.0": {
         "dependencies": {
-          "Authorizer.Models": "1.0.0",
-          "Language.Models": "1.0.0",
           "Prism.Unity": "8.1.97",
-          "Stocker.Wpf.Models": "1.0.0"
+          "Stocker.Wpf.Models": "1.0.0",
+          "Stocker.Wpf.Views": "1.0.0"
         },
         "runtime": {
           "Stocker.Wpf.ViewModels.dll": {}
@@ -706,30 +627,198 @@
       },
       "Stocker.Wpf.Views/1.0.0": {
         "dependencies": {
-          "Stocker.Wpf.Models": "1.0.0"
+          "LiveCharts.Wpf.NetCore3": "0.9.7",
+          "MahApps.Metro": "2.4.9",
+          "Prism.Wpf": "8.1.97",
+          "Stocker.Wpf.Models": "1.0.0",
+          "gong-wpf-dragdrop": "3.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Views.dll": {}
         }
       },
-      "Utilities/1.0.0": {
+      "Mov.Accessors/1.0.0.0": {
         "runtime": {
-          "Utilities.dll": {}
+          "Mov.Accessors.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WpfControls/1.0.0": {
-        "dependencies": {
-          "LiveCharts.Wpf.NetCore3": "0.9.7",
-          "MahApps.Metro": "2.4.9",
-          "MaterialDesignColors": "2.0.3",
-          "MaterialDesignThemes": "4.2.1",
-          "MaterialDesignThemes.MahApps": "0.1.9",
-          "Prism.Wpf": "8.1.97",
-          "ReactiveProperty.WPF": "8.0.1",
-          "gong-wpf-dragdrop": "3.0.0"
-        },
+      "Mov.Authorizer.Models/1.0.0.0": {
         "runtime": {
-          "WpfControls.dll": {}
+          "Mov.Authorizer.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Authorizer.Repository/1.0.0.0": {
+        "runtime": {
+          "Mov.Authorizer.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Authorizer.Service/1.0.0.0": {
+        "runtime": {
+          "Mov.Authorizer.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Configurator.Models/1.0.0.0": {
+        "runtime": {
+          "Mov.Configurator.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Configurator.Repository/1.0.0.0": {
+        "runtime": {
+          "Mov.Configurator.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Configurator.Service/1.0.0.0": {
+        "runtime": {
+          "Mov.Configurator.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Designer.Models/1.0.0.0": {
+        "runtime": {
+          "Mov.Designer.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Designer.Repository/1.0.0.0": {
+        "runtime": {
+          "Mov.Designer.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Designer.Service/1.0.0.0": {
+        "runtime": {
+          "Mov.Designer.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Scheduler.Models/1.0.0.0": {
+        "runtime": {
+          "Mov.Scheduler.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Scheduler.Repository/1.0.0.0": {
+        "runtime": {
+          "Mov.Scheduler.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Scheduler.Service/1.0.0.0": {
+        "runtime": {
+          "Mov.Scheduler.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Translator.Models/1.0.0.0": {
+        "runtime": {
+          "Mov.Translator.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Translator.Repository/1.0.0.0": {
+        "runtime": {
+          "Mov.Translator.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Translator.Service/1.0.0.0": {
+        "runtime": {
+          "Mov.Translator.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.Utilities/1.0.0.0": {
+        "runtime": {
+          "Mov.Utilities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.WpfControls/1.0.0.0": {
+        "runtime": {
+          "Mov.WpfControls.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CsvHelper/27.0.0.0": {
+        "runtime": {
+          "CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.2.1.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.55.0.0": {
+        "runtime": {
+          "Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.55.0.0",
+            "fileVersion": "1.55.0.0"
+          }
+        }
+      },
+      "Google.Apis.Calendar.v3/1.55.0.2500": {
+        "runtime": {
+          "Google.Apis.Calendar.v3.dll": {
+            "assemblyVersion": "1.55.0.2500",
+            "fileVersion": "1.55.0.2500"
+          }
+        }
+      },
+      "Google.Apis/1.55.0.0": {
+        "runtime": {
+          "Google.Apis.dll": {
+            "assemblyVersion": "1.55.0.0",
+            "fileVersion": "1.55.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.55.0.0": {
+        "runtime": {
+          "Google.Apis.Core.dll": {
+            "assemblyVersion": "1.55.0.0",
+            "fileVersion": "1.55.0.0"
+          }
         }
       }
     }
@@ -746,13 +835,6 @@
       "sha512": "sha512-pZ5z4hYWwE4R13UMCVs6vII//nL7hz+Nwn4oJlnsZJRGqJNy6Z9KnJiTZfly6lKFu0pMc1aWBZpx+VqFTQKP1Q==",
       "path": "controlzex/4.4.0",
       "hashPath": "controlzex.4.4.0.nupkg.sha512"
-    },
-    "CsvHelper/27.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
-      "path": "csvhelper/27.2.1",
-      "hashPath": "csvhelper.27.2.1.nupkg.sha512"
     },
     "gong-wpf-dragdrop/3.0.0": {
       "type": "package",
@@ -1132,51 +1214,6 @@
       "path": "unity.container/5.11.11",
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
     },
-    "Accessors/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Authorizer.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Authorizer.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Configurator.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Configurator.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Designer.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Designer.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Language.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Language.Repository/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Stocker.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1202,13 +1239,118 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Utilities/1.0.0": {
-      "type": "project",
+    "Mov.Accessors/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "WpfControls/1.0.0": {
-      "type": "project",
+    "Mov.Authorizer.Models/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Authorizer.Repository/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Authorizer.Service/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Configurator.Models/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Configurator.Repository/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Configurator.Service/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Designer.Models/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Designer.Repository/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Designer.Service/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Scheduler.Models/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Scheduler.Repository/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Scheduler.Service/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Translator.Models/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Translator.Repository/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Translator.Service/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.Utilities/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.WpfControls/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/27.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Apis.Auth/1.55.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Apis.Calendar.v3/1.55.0.2500": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Apis/1.55.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Apis.Core/1.55.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

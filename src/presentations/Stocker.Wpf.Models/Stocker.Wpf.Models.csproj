@@ -6,16 +6,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\domains\Authorizer.Models\Authorizer.Models.csproj" />
-    <ProjectReference Include="..\..\domains\Configurator.Models\Configurator.Models.csproj" />
-    <ProjectReference Include="..\..\domains\Designer.Models\Designer.Models.csproj" />
-    <ProjectReference Include="..\..\domains\Language.Models\Language.Models.csproj" />
     <ProjectReference Include="..\..\domains\Stocker.Models\Stocker.Models.csproj" />
-    <ProjectReference Include="..\..\infrastructures\WpfControls\WpfControls.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Dialogs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.9" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mov.Authorizer.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Authorizer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Configurator.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Configurator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Designer.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Designer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Scheduler.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Scheduler.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Translator.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Translator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.WpfControls">
+      <HintPath>..\..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

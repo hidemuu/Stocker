@@ -1,6 +1,6 @@
-﻿using Authorizer.Models;
-using Configurator.Models;
-using Language.Models;
+﻿using Mov.Authorizer.Models;
+using Mov.Configurator.Models;
+using Mov.Translator.Models;
 using Reactive.Bindings;
 using Stocker.Models;
 using Stocker.Wpf.Models.Tables;
@@ -16,7 +16,7 @@ namespace Stocker.Wpf.ViewModels.Panels.Contents
     {
         private readonly IConfiguratorRepository configurator;
         private readonly IAuthorizerRepository authorizer;
-        private readonly ILanguageRepository language;
+        private readonly ITranslatorRepository language;
 
         public ReactiveCollection<TableModel> Models { get; } = new ReactiveCollection<TableModel>();
 
@@ -29,7 +29,7 @@ namespace Stocker.Wpf.ViewModels.Panels.Contents
         public ReactiveCommand ClickUserSettingCommand { get; } = new ReactiveCommand();
         public ReactiveCommand ClickCommentCommand { get; } = new ReactiveCommand();
 
-        public TableViewModel(IStockerRepository repository, IConfiguratorRepository configurator, IAuthorizerRepository authorizer, ILanguageRepository language) : base(repository)
+        public TableViewModel(IStockerRepository repository, IConfiguratorRepository configurator, IAuthorizerRepository authorizer, ITranslatorRepository language) : base(repository)
         {
             this.configurator = configurator;
             this.authorizer = authorizer;

@@ -10,9 +10,29 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\domains\Authorizer.Models\Authorizer.Models.csproj" />
-    <ProjectReference Include="..\..\domains\Language.Models\Language.Models.csproj" />
     <ProjectReference Include="..\Stocker.Wpf.Models\Stocker.Wpf.Models.csproj" />
+    <ProjectReference Include="..\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mov.Authorizer.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Authorizer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Configurator.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Configurator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Designer.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Designer.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Scheduler.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Scheduler.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.Translator.Models">
+      <HintPath>..\..\..\..\mov\app\mov\bin\Debug\net5.0\Mov.Translator.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Mov.WpfControls">
+      <HintPath>..\..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

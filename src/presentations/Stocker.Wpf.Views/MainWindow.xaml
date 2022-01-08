@@ -29,9 +29,9 @@
     <metro:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/WpfControls;component/Styles/LayoutStyles.xaml" />
-                <ResourceDictionary Source="/WpfControls;component/Styles/NavigationRailStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/NavigationRailStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </metro:MetroWindow.Resources>

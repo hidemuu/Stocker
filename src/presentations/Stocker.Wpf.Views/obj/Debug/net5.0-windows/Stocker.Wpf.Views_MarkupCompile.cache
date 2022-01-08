@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 17-360757266
 
 18765063869
-219295790786
+212-496530290
 Dialogs\AlertDialog.xaml;Dialogs\DialogWindow.xaml;Dialogs\SuccessDialog.xaml;Dialogs\WarningDialog.xaml;Login\CreateAccount.xaml;Login\LoginMainContent.xaml;Login\LoginWindow.xaml;MainWindow.xaml;Panels\Contents\ChartView.xaml;Panels\Contents\DashboardView.xaml;Panels\Contents\LayoutView.xaml;Panels\Contents\SettingView.xaml;Panels\Contents\TableView.xaml;Panels\Contents\TreeTableView.xaml;Panels\Footers\GuideView.xaml;Panels\Headers\MenuView.xaml;Panels\Headers\ToolView.xaml;
 
 False
