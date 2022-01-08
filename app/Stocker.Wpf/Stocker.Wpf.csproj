@@ -79,6 +79,9 @@
     <Reference Include="Mov.WpfControls">
       <HintPath>..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfControls.dll</HintPath>
     </Reference>
+    <Reference Include="Mov.WpfDesigns">
+      <HintPath>..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfDesigns.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

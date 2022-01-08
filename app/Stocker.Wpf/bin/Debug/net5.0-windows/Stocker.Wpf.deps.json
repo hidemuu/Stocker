@@ -30,7 +30,8 @@
           "Mov.Translator.Repository": "1.0.0.0",
           "Mov.Translator.Service": "1.0.0.0",
           "Mov.Utilities": "1.0.0.0",
-          "Mov.WpfControls": "1.0.0.0"
+          "Mov.WpfControls": "1.0.0.0",
+          "Mov.WpfDesigns": "1.0.0.0"
         },
         "runtime": {
           "Stocker.Wpf.dll": {}
@@ -781,6 +782,14 @@
           }
         }
       },
+      "Mov.WpfDesigns/1.0.0.0": {
+        "runtime": {
+          "Mov.WpfDesigns.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "CsvHelper/27.0.0.0": {
         "runtime": {
           "CsvHelper.dll": {
@@ -1325,6 +1334,11 @@
       "sha512": ""
     },
     "Mov.WpfControls/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.WpfDesigns/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

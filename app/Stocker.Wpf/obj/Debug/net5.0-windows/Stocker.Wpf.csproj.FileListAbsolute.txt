@@ -128,3 +128,5 @@ C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.Scheduler.Repository.pdb
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.Scheduler.Service.pdb
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.Translator.Service.pdb
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.WpfDesigns.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.WpfDesigns.pdb

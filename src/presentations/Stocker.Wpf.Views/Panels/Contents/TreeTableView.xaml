@@ -6,16 +6,16 @@
     xmlns:local="clr-namespace:Stocker.Wpf.Views.Panels"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
-    prism:ViewModelLocator.AutoWireViewModel="True"
     xmlns:vm="clr-namespace:Stocker.Wpf.Models.Trees;assembly=Stocker.Wpf.Models"
     d:DataContext="{d:DesignInstance vm:ITreeTableViewModel}"
     d:DesignHeight="450"
     d:DesignWidth="300"
+    prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/LayoutStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -33,8 +33,7 @@
             ItemsSource="{Binding Models}">
             <TreeView.Resources>
                 <Style TargetType="TreeViewItem">
-                    <Setter Property="IsExpanded" 
-                            Value="{Binding IsExpanded.Value, Mode=TwoWay}" />
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded.Value, Mode=TwoWay}" />
                 </Style>
             </TreeView.Resources>
             <TreeView.ItemTemplate>

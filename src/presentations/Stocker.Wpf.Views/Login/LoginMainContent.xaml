@@ -15,8 +15,8 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/ButtonStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/ButtonStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <converters:BoolToVisibillityConverter x:Key="boolToVisibillityConverter" />
         </ResourceDictionary>

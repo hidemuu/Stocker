@@ -29,9 +29,9 @@
     <metro:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/BaseStyles.xaml" />
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/LayoutStyles.xaml" />
-                <ResourceDictionary Source="/Mov.WpfControls;component/Styles/NavigationRailStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/LayoutStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/NavigationRailStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </metro:MetroWindow.Resources>
@@ -86,7 +86,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <materialDesign:ColorZone
                 Grid.Row="0"
@@ -94,8 +94,15 @@
                 materialDesign:ShadowAssist.ShadowDepth="Depth1">
                 <DockPanel>
                     <StackPanel Orientation="Horizontal">
-                        <ToggleButton x:Name="MenuToggleButton" IsChecked="False" Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
-                        <TextBlock Margin="16,0,0,0" VerticalAlignment="Center" Text="Stocker" FontSize="16" />
+                        <ToggleButton
+                            x:Name="MenuToggleButton"
+                            IsChecked="False"
+                            Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
+                        <TextBlock
+                            Margin="16,0,0,0"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Text="Stocker" />
                         <ContentControl
                             x:Name="menuBarRegion"
                             prism:RegionManager.RegionManager="{Binding RegionManager}"
@@ -110,11 +117,11 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <TabControl
-                        Grid.Column="0"
-                        Padding="16"
-                        ItemsSource="{Binding Models}"
-                        SelectedIndex="{Binding TabPage.Value}"
-                        Style="{StaticResource NavigationRailControlStyleKey}">
+                    Grid.Column="0"
+                    Padding="16"
+                    ItemsSource="{Binding Models}"
+                    SelectedIndex="{Binding TabPage.Value}"
+                    Style="{StaticResource NavigationRailControlStyleKey}">
                     <TabControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -123,17 +130,17 @@
                                     <RowDefinition />
                                 </Grid.RowDefinitions>
                                 <materialDesign:PackIcon
-                                        Grid.Row="0"
-                                        Width="24"
-                                        Height="24"
-                                        HorizontalAlignment="Center"
-                                        Kind="{Binding IconKey.Value}" />
+                                    Grid.Row="0"
+                                    Width="24"
+                                    Height="24"
+                                    HorizontalAlignment="Center"
+                                    Kind="{Binding IconKey.Value}" />
                                 <TextBlock
-                                        Grid.Row="1"
-                                        Margin="0,4,0,0"
-                                        HorizontalAlignment="Center"
-                                        Style="{StaticResource MaterialDesignCaptionTextBlock}"
-                                        Text="{Binding Title.Value}" />
+                                    Grid.Row="1"
+                                    Margin="0,4,0,0"
+                                    HorizontalAlignment="Center"
+                                    Style="{StaticResource MaterialDesignCaptionTextBlock}"
+                                    Text="{Binding Title.Value}" />
                             </Grid>
                         </DataTemplate>
                     </TabControl.ItemTemplate>
@@ -144,36 +151,36 @@
                     </i:Interaction.Triggers>
                 </TabControl>
                 <DockPanel
-                        Grid.Column="1"
-                        Margin="5"
-                        LastChildFill="True">
+                    Grid.Column="1"
+                    Margin="5"
+                    LastChildFill="True">
                     <ContentControl
-                            x:Name="toolBarRegion"
-                            prism:RegionManager.RegionManager="{Binding RegionManager}"
-                            prism:RegionManager.RegionName="{x:Static constants:RegionNames.TOOL_BAR}"
-                            DockPanel.Dock="Top" />
+                        x:Name="toolBarRegion"
+                        prism:RegionManager.RegionManager="{Binding RegionManager}"
+                        prism:RegionManager.RegionName="{x:Static constants:RegionNames.TOOL_BAR}"
+                        DockPanel.Dock="Top" />
                     <ContentControl
-                            x:Name="leftRegion"
-                            MaxWidth="200"
-                            prism:RegionManager.RegionManager="{Binding RegionManager}"
-                            prism:RegionManager.RegionName="{x:Static constants:RegionNames.LEFT_CONTENT}"
-                            DockPanel.Dock="Left" />
+                        x:Name="leftRegion"
+                        MaxWidth="200"
+                        prism:RegionManager.RegionManager="{Binding RegionManager}"
+                        prism:RegionManager.RegionName="{x:Static constants:RegionNames.LEFT_CONTENT}"
+                        DockPanel.Dock="Left" />
                     <ContentControl
-                            x:Name="rightRegion"
-                            MaxWidth="200"
-                            prism:RegionManager.RegionManager="{Binding RegionManager}"
-                            prism:RegionManager.RegionName="{x:Static constants:RegionNames.RIGHT_CONTENT}"
-                            DockPanel.Dock="Right" />
+                        x:Name="rightRegion"
+                        MaxWidth="200"
+                        prism:RegionManager.RegionManager="{Binding RegionManager}"
+                        prism:RegionManager.RegionName="{x:Static constants:RegionNames.RIGHT_CONTENT}"
+                        DockPanel.Dock="Right" />
                     <ContentControl
-                            x:Name="footerRegion"
-                            prism:RegionManager.RegionManager="{Binding RegionManager}"
-                            prism:RegionManager.RegionName="{x:Static constants:RegionNames.FOOTER}"
-                            DockPanel.Dock="Bottom" />
+                        x:Name="footerRegion"
+                        prism:RegionManager.RegionManager="{Binding RegionManager}"
+                        prism:RegionManager.RegionName="{x:Static constants:RegionNames.FOOTER}"
+                        DockPanel.Dock="Bottom" />
                     <ContentControl
-                            x:Name="contentRegion"
-                            MinWidth="400"
-                            prism:RegionManager.RegionManager="{Binding RegionManager}"
-                            prism:RegionManager.RegionName="{x:Static constants:RegionNames.CENTER_CONTENT}" />
+                        x:Name="contentRegion"
+                        MinWidth="400"
+                        prism:RegionManager.RegionManager="{Binding RegionManager}"
+                        prism:RegionManager.RegionName="{x:Static constants:RegionNames.CENTER_CONTENT}" />
                 </DockPanel>
             </Grid>
         </Grid>

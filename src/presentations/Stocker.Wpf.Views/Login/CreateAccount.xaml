@@ -147,8 +147,7 @@
                 Command="{Binding VerityCommand}"
                 Content="Verity"
                 FontSize="15"
-                Foreground="#DAD9FF"
-                >
+                Foreground="#DAD9FF">
                 <Button.CommandParameter>
                     <MultiBinding Converter="{StaticResource PasswordConverter}">
                         <Binding ElementName="Password" />

@@ -13,7 +13,8 @@
           "Prism.Wpf": "8.1.97",
           "Stocker.Wpf.Models": "1.0.0",
           "gong-wpf-dragdrop": "3.0.0",
-          "Mov.WpfControls": "1.0.0.0"
+          "Mov.WpfControls": "1.0.0.0",
+          "Mov.WpfDesigns": "1.0.0.0"
         },
         "runtime": {
           "Stocker.Wpf.Views.dll": {}
@@ -206,6 +207,14 @@
       "Mov.WpfControls/1.0.0.0": {
         "runtime": {
           "Mov.WpfControls.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mov.WpfDesigns/1.0.0.0": {
+        "runtime": {
+          "Mov.WpfDesigns.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -412,6 +421,11 @@
       "sha512": ""
     },
     "Mov.WpfControls/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.WpfDesigns/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -1,38 +1,32 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Mov.Authorizer.Models;
+using Mov.Authorizer.Repository;
+using Mov.Configurator.Models;
+using Mov.Configurator.Repository;
+using Mov.Designer.Models;
+using Mov.Designer.Repository.Xml;
+using Mov.Translator.Models;
+using Mov.Translator.Repository;
+using Mov.Utilities;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Unity;
-using Mov.Designer.Models;
-using Mov.Designer.Repository.Xml;
 using Stocker.Models;
 using Stocker.Repository.Sql;
-using Mov.Configurator.Models;
-using Mov.Configurator.Repository;
-using Mov.Utilities;
 using Stocker.Wpf.ViewModels;
-using Stocker.Wpf.ViewModels.Panels;
-using Stocker.Wpf.Views;
-using Stocker.Wpf.Views.Panels;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using Mov.Authorizer.Models;
-using Mov.Authorizer.Repository;
-using Stocker.Wpf.Views.Dialogs;
 using Stocker.Wpf.ViewModels.Dialogs;
-using Stocker.Wpf.Views.Login;
 using Stocker.Wpf.ViewModels.Login;
-using Mov.Translator.Repository;
-using Mov.Translator.Models;
-using System.IO;
-using Stocker.Wpf.Views.Panels.Contents;
+using Stocker.Wpf.ViewModels.Panels;
 using Stocker.Wpf.ViewModels.Panels.Contents;
+using Stocker.Wpf.Views;
+using Stocker.Wpf.Views.Dialogs;
+using Stocker.Wpf.Views.Login;
+using Stocker.Wpf.Views.Panels;
+using Stocker.Wpf.Views.Panels.Contents;
+using System.IO;
+using System.Windows;
 
 namespace Stocker.Wpf
 {
@@ -119,6 +113,5 @@ namespace Stocker.Wpf
         {
             return new ConfigurationModuleCatalog();
         }
-
     }
 }
