@@ -2,84 +2,87 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Panels\Contents\TreeTableView.xaml.cs">
+    <Compile Update="Dialogs\Logins\LoginDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\TableView.xaml.cs">
+    <Compile Update="Pages\Contents\TreeTableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Footers\GuideView.xaml.cs">
+    <Compile Update="Pages\Contents\TableView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\DashboardView.xaml.cs">
+    <Compile Update="Pages\Footers\GuideView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Headers\MenuView.xaml.cs">
+    <Compile Update="Pages\Contents\DashboardView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\ChartView.xaml.cs">
+    <Compile Update="Pages\Headers\MenuView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\LayoutView.xaml.cs">
+    <Compile Update="Pages\Contents\ChartView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Contents\SettingView.xaml.cs">
+    <Compile Update="Pages\Contents\LayoutView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Panels\Headers\ToolView.xaml.cs">
+    <Compile Update="Pages\Contents\SettingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Headers\ToolView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Dialogs\AlertDialog.xaml">
+    <Page Update="Dialogs\Commons\AlertDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Dialogs\DialogWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Dialogs\SuccessDialog.xaml">
+    <Page Update="Dialogs\Commons\SuccessDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Dialogs\WarningDialog.xaml">
+    <Page Update="Dialogs\Commons\WarningDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\CreateAccount.xaml">
+    <Page Update="Dialogs\Logins\Contents\CreateAccount.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\LoginMainContent.xaml">
+    <Page Update="Dialogs\Logins\Contents\LoginMainContent.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\LoginWindow.xaml">
+    <Page Update="Dialogs\Logins\LoginDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\TreeTableView.xaml">
+    <Page Update="Pages\Contents\TreeTableView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\TableView.xaml">
+    <Page Update="Pages\Contents\TableView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Footers\GuideView.xaml">
+    <Page Update="Pages\Footers\GuideView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\DashboardView.xaml">
+    <Page Update="Pages\Contents\DashboardView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Headers\MenuView.xaml">
+    <Page Update="Pages\Headers\MenuView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\ChartView.xaml">
+    <Page Update="Pages\Contents\ChartView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\LayoutView.xaml">
+    <Page Update="Pages\Contents\LayoutView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Contents\SettingView.xaml">
+    <Page Update="Pages\Contents\SettingView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Panels\Headers\ToolView.xaml">
+    <Page Update="Pages\Headers\ToolView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

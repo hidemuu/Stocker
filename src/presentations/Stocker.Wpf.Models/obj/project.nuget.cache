@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8WJF4QNeceAXQAOeLlt2xVMpLONd5Ha3u/L1dvShtTIKH+yFKa0Qixb+KBUdZAtOntAheys0cpK+oBm+DPtyGA==",
+  "dgSpecHash": "opnOybvPoOfS5XXQbcRf4IAMiZhJETAUFHExJNNd4PFuzrE/d7DohlnT+GM+veMgS5P72pusZG99gEDW2WVbpQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Models\\Stocker.Wpf.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
+    "C:\\Users\\nando\\.nuget\\packages\\livecharts.wpf.netcore3\\0.9.7\\livecharts.wpf.netcore3.0.9.7.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\mahapps.metro\\2.0.0\\mahapps.metro.2.0.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512",
@@ -15,6 +16,7 @@
     "C:\\Users\\nando\\.nuget\\packages\\reactiveproperty.core\\8.0.1\\reactiveproperty.core.8.0.1.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\reactiveproperty.wpf\\8.0.1\\reactiveproperty.wpf.8.0.1.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\nando\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],

@@ -119,6 +119,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "LiveCharts.Wpf.NetCore3": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "MaterialDesignColors": {
               "target": "Package",
               "version": "[2.0.3, )"
@@ -205,10 +209,6 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
-            "LiveCharts.Wpf.NetCore3": {
-              "target": "Package",
-              "version": "[0.9.7, )"
-            },
             "MahApps.Metro": {
               "target": "Package",
               "version": "[2.4.9, )"

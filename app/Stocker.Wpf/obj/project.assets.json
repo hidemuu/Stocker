@@ -743,6 +743,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MaterialDesignColors": "2.0.3",
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",
@@ -764,8 +765,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Prism.Unity": "8.1.97",
-          "Stocker.Wpf.Models": "1.0.0",
-          "Stocker.Wpf.Views": "1.0.0"
+          "Stocker.Wpf.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Stocker.Wpf.ViewModels.dll": {}
@@ -781,7 +781,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MahApps.Metro": "2.4.9",
           "Prism.Wpf": "8.1.97",
           "Stocker.Wpf.Models": "1.0.0",
@@ -2102,7 +2101,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.17",
       "Stocker.Repository >= 1.0.0",
-      "Stocker.Wpf.ViewModels >= 1.0.0"
+      "Stocker.Wpf.ViewModels >= 1.0.0",
+      "Stocker.Wpf.Views >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2147,6 +2147,9 @@
             },
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.ViewModels\\Stocker.Wpf.ViewModels.csproj"
+            },
+            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj": {
+              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj"
             }
           }
         }

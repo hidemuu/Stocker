@@ -1,20 +1,20 @@
 ﻿
 
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\AlertDialog.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Commons\AlertDialog.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Commons\SuccessDialog.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Commons\WarningDialog.xaml;;
 FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\DialogWindow.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\SuccessDialog.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\WarningDialog.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Login\CreateAccount.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Login\LoginMainContent.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Login\LoginWindow.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Logins\Contents\CreateAccount.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Logins\Contents\LoginMainContent.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Dialogs\Logins\LoginDialog.xaml;;
 FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\MainWindow.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\ChartView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\DashboardView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\LayoutView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\SettingView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\TableView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Contents\TreeTableView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Footers\GuideView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Headers\MenuView.xaml;;
-FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Panels\Headers\ToolView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\ChartView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\DashboardView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\LayoutView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\SettingView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\TableView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Contents\TreeTableView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Footers\GuideView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Headers\MenuView.xaml;;
+FC:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Views\Pages\Headers\ToolView.xaml;;
 

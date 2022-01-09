@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "ControlzEx/4.4.0": {
+      "ControlzEx/4.3.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Xaml.Behaviors.Wpf": "1.1.19",
@@ -13,18 +13,6 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/ControlzEx.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
-      "gong-wpf-dragdrop/3.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -47,10 +35,10 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "MahApps.Metro/2.4.9": {
+      "MahApps.Metro/2.0.0": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "[4.4.0, 6.0.0)"
+          "ControlzEx": "4.3.0"
         },
         "compile": {
           "lib/netcoreapp3.1/MahApps.Metro.dll": {}
@@ -60,12 +48,7 @@
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
-        ],
-        "resource": {
-          "lib/netcoreapp3.1/de/MahApps.Metro.resources.dll": {
-            "locale": "de"
-          }
-        }
+        ]
       },
       "MaterialDesignColors/2.0.3": {
         "type": "package",
@@ -306,6 +289,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MaterialDesignColors": "2.0.3",
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",
@@ -321,38 +305,18 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
-      },
-      "Stocker.Wpf.Views/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "LiveCharts.Wpf.NetCore3": "0.9.7",
-          "MahApps.Metro": "2.4.9",
-          "Prism.Wpf": "8.1.97",
-          "Stocker.Wpf.Models": "1.0.0",
-          "gong-wpf-dragdrop": "3.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stocker.Wpf.Views.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stocker.Wpf.Views.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
       }
     }
   },
   "libraries": {
-    "ControlzEx/4.4.0": {
-      "sha512": "pZ5z4hYWwE4R13UMCVs6vII//nL7hz+Nwn4oJlnsZJRGqJNy6Z9KnJiTZfly6lKFu0pMc1aWBZpx+VqFTQKP1Q==",
+    "ControlzEx/4.3.0": {
+      "sha512": "I7PKmQNIMO9+s4s50WXOApotnyEKL9G8vvYrZY7CLe7nufXwRSv+vWPrd4BYwZDQiWHbBwnXsC8zUPgPnEWr6g==",
       "type": "package",
-      "path": "controlzex/4.4.0",
+      "path": "controlzex/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "controlzex.4.4.0.nupkg.sha512",
+        "controlzex.4.3.0.nupkg.sha512",
         "controlzex.nuspec",
         "lib/net45/ControlzEx.dll",
         "lib/net45/ControlzEx.pdb",
@@ -367,37 +331,6 @@
         "lib/netcoreapp3.1/ControlzEx.pdb",
         "lib/netcoreapp3.1/ControlzEx.xml",
         "logo-mini.png"
-      ]
-    },
-    "gong-wpf-dragdrop/3.0.0": {
-      "sha512": "0qXxJ0gEJtDlC7fl19684wMuIfK+aA3Hj3Z1lGUEH/ZhmCnFpy0YNFy7IIyFM3SMr7hWdL3eRnG1oRm/j/Dgog==",
-      "type": "package",
-      "path": "gong-wpf-dragdrop/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "GongSolutions.Wpf.DragDrop.png",
-        "LICENSE",
-        "gong-wpf-dragdrop.3.0.0.nupkg.sha512",
-        "gong-wpf-dragdrop.nuspec",
-        "lib/net462/GongSolutions.WPF.DragDrop.dll",
-        "lib/net462/GongSolutions.WPF.DragDrop.pdb",
-        "lib/net462/GongSolutions.WPF.DragDrop.xml",
-        "lib/net47/GongSolutions.WPF.DragDrop.dll",
-        "lib/net47/GongSolutions.WPF.DragDrop.pdb",
-        "lib/net47/GongSolutions.WPF.DragDrop.xml",
-        "lib/net48/GongSolutions.WPF.DragDrop.dll",
-        "lib/net48/GongSolutions.WPF.DragDrop.pdb",
-        "lib/net48/GongSolutions.WPF.DragDrop.xml",
-        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
-        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
-        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
-        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
-        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.pdb",
-        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
-        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.dll",
-        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.pdb",
-        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.xml"
       ]
     },
     "LiveCharts.Wpf.NetCore3/0.9.7": {
@@ -417,38 +350,31 @@
         "livecharts.wpf.netcore3.nuspec"
       ]
     },
-    "MahApps.Metro/2.4.9": {
-      "sha512": "eMTkg6TBnCwHzszw7CP+pxsBeB4ZMsJFiTJJoifUVBysRyEenzzR+TKQJuMvvKK6KzvLxwHmJsFhi9o5p4vxhQ==",
+    "MahApps.Metro/2.0.0": {
+      "sha512": "btjlE3Q8iebJB+4TBJZLcJBQZshKYqfkcATj9AS8veq4a506uE71NOTE1OSoavOJ70xasBjcdc+VuN17l+kIqw==",
       "type": "package",
-      "path": "mahapps.metro/2.4.9",
-      "hasTools": true,
+      "path": "mahapps.metro/2.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/MahApps.Metro.dll",
         "lib/net452/MahApps.Metro.pdb",
         "lib/net452/MahApps.Metro.xml",
-        "lib/net452/de/MahApps.Metro.resources.dll",
         "lib/net46/MahApps.Metro.dll",
         "lib/net46/MahApps.Metro.pdb",
         "lib/net46/MahApps.Metro.xml",
-        "lib/net46/de/MahApps.Metro.resources.dll",
         "lib/net47/MahApps.Metro.dll",
         "lib/net47/MahApps.Metro.pdb",
         "lib/net47/MahApps.Metro.xml",
-        "lib/net47/de/MahApps.Metro.resources.dll",
         "lib/netcoreapp3.0/MahApps.Metro.dll",
         "lib/netcoreapp3.0/MahApps.Metro.pdb",
         "lib/netcoreapp3.0/MahApps.Metro.xml",
-        "lib/netcoreapp3.0/de/MahApps.Metro.resources.dll",
         "lib/netcoreapp3.1/MahApps.Metro.dll",
         "lib/netcoreapp3.1/MahApps.Metro.pdb",
         "lib/netcoreapp3.1/MahApps.Metro.xml",
-        "lib/netcoreapp3.1/de/MahApps.Metro.resources.dll",
-        "mahapps.metro.2.4.9.nupkg.sha512",
+        "mahapps.metro.2.0.0.nupkg.sha512",
         "mahapps.metro.logo.png",
-        "mahapps.metro.nuspec",
-        "tools/VisualStudioToolsManifest.xml"
+        "mahapps.metro.nuspec"
       ]
     },
     "MaterialDesignColors/2.0.3": {
@@ -1002,18 +928,12 @@
       "type": "project",
       "path": "../Stocker.Wpf.Models/Stocker.Wpf.Models.csproj",
       "msbuildProject": "../Stocker.Wpf.Models/Stocker.Wpf.Models.csproj"
-    },
-    "Stocker.Wpf.Views/1.0.0": {
-      "type": "project",
-      "path": "../Stocker.Wpf.Views/Stocker.Wpf.Views.csproj",
-      "msbuildProject": "../Stocker.Wpf.Views/Stocker.Wpf.Views.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "Prism.Unity >= 8.1.97",
-      "Stocker.Wpf.Models >= 1.0.0",
-      "Stocker.Wpf.Views >= 1.0.0"
+      "Stocker.Wpf.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1055,9 +975,6 @@
           "projectReferences": {
             "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Models\\Stocker.Wpf.Models.csproj": {
               "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Models\\Stocker.Wpf.Models.csproj"
-            },
-            "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj": {
-              "projectPath": "C:\\Users\\nando\\Documents\\GitHub\\Stocker\\src\\presentations\\Stocker.Wpf.Views\\Stocker.Wpf.Views.csproj"
             }
           }
         }

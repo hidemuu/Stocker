@@ -78,6 +78,7 @@ namespace Stocker.Wpf
             containerRegistry.RegisterForNavigation<SettingView>();
 
             //Dialogの登録
+            containerRegistry.RegisterDialog<LoginDialog, LoginDialogViewModel>();
             containerRegistry.RegisterDialog<AlertDialog, AlertDialogViewModel>();
             containerRegistry.RegisterDialog<SuccessDialog, SuccessDialogViewModel>();
             containerRegistry.RegisterDialog<WarningDialog, WarningDialogViewModel>();
@@ -96,7 +97,6 @@ namespace Stocker.Wpf
         {
             base.ConfigureViewModelLocator();
 
-            ViewModelLocationProvider.Register<LoginWindow, LoginWindowViewModel>();
             ViewModelLocationProvider.Register<LoginMainContent, LoginMainContentViewModel>();
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
             ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();

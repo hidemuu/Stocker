@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "Stocker.Wpf.Views/1.0.0": {
         "dependencies": {
-          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MahApps.Metro": "2.4.9",
           "Prism.Wpf": "8.1.97",
           "Stocker.Wpf.Models": "1.0.0",
@@ -194,6 +193,7 @@
       },
       "Stocker.Wpf.Models/1.0.0": {
         "dependencies": {
+          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MaterialDesignColors": "2.0.3",
           "MaterialDesignThemes": "4.2.1",
           "MaterialDesignThemes.MahApps": "0.1.9",

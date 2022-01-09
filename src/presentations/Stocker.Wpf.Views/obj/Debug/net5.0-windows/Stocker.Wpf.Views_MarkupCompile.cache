@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 
-17-360757266
+17-1567829067
 
-18765063869
+18964429980
 213469827549
-Dialogs\AlertDialog.xaml;Dialogs\DialogWindow.xaml;Dialogs\SuccessDialog.xaml;Dialogs\WarningDialog.xaml;Login\CreateAccount.xaml;Login\LoginMainContent.xaml;Login\LoginWindow.xaml;MainWindow.xaml;Panels\Contents\ChartView.xaml;Panels\Contents\DashboardView.xaml;Panels\Contents\LayoutView.xaml;Panels\Contents\SettingView.xaml;Panels\Contents\TableView.xaml;Panels\Contents\TreeTableView.xaml;Panels\Footers\GuideView.xaml;Panels\Headers\MenuView.xaml;Panels\Headers\ToolView.xaml;
+Dialogs\Commons\AlertDialog.xaml;Dialogs\Commons\SuccessDialog.xaml;Dialogs\Commons\WarningDialog.xaml;Dialogs\DialogWindow.xaml;Dialogs\Logins\Contents\CreateAccount.xaml;Dialogs\Logins\Contents\LoginMainContent.xaml;Dialogs\Logins\LoginDialog.xaml;MainWindow.xaml;Pages\Contents\ChartView.xaml;Pages\Contents\DashboardView.xaml;Pages\Contents\LayoutView.xaml;Pages\Contents\SettingView.xaml;Pages\Contents\TableView.xaml;Pages\Contents\TreeTableView.xaml;Pages\Footers\GuideView.xaml;Pages\Headers\MenuView.xaml;Pages\Headers\ToolView.xaml;
 
 False
 

@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\applications\Stocker.Repository\Stocker.Repository.csproj" />
     <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.ViewModels\Stocker.Wpf.ViewModels.csproj" />
+    <ProjectReference Include="..\..\src\presentations\Stocker.Wpf.Views\Stocker.Wpf.Views.csproj" />
   </ItemGroup>
 
   <ItemGroup>

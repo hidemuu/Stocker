@@ -49,3 +49,5 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\obj
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Mov.Scheduler.Models.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\CsvHelper.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Mov.Scheduler.Models.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Prism.Wpf.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Prism.dll
