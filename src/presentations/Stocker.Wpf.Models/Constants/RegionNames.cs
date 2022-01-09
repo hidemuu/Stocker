@@ -14,6 +14,6 @@ namespace Stocker.Wpf.Models.Constants
         public const string RIGHT_CONTENT = "RightContentRegion";
         public const string FOOTER = "FooterRegion";
         public const string CENTER_CONTENT = "CenterContentRegion";
-        public const string LOGIN = "LoginRegion";
+        public const string MAIN = "MainRegion";
     }
 }

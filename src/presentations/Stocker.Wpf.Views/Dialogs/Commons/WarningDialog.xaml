@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
     Height="150"
-    Width="200"
+    Width="350"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
     <behaviors:Interaction.Triggers>

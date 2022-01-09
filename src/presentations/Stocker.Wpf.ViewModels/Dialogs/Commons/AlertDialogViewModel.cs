@@ -19,13 +19,13 @@ namespace Stocker.Wpf.ViewModels.Dialogs
 
         public override string Title => "Notification";
 
-        public ReactivePropertySlim<string> Message = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string> Message { get; } = new ReactivePropertySlim<string>();
 
         #endregion
 
         #region コマンド
 
-        public ReactiveCommand<string> RequestCloseCommand = new ReactiveCommand<string>();
+        public ReactiveCommand<string> RequestCloseCommand { get; } = new ReactiveCommand<string>();
 
         #endregion
 
@@ -45,6 +45,8 @@ namespace Stocker.Wpf.ViewModels.Dialogs
                 result = ButtonResult.Yes;
             else if (parameter?.ToLower() == "false")
                 result = ButtonResult.No;
+            else
+                result = ButtonResult.None;
             RequestCloseInvoke(new DialogResult(result));
             
         }

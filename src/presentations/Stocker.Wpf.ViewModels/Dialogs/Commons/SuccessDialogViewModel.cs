@@ -18,7 +18,7 @@ namespace Stocker.Wpf.ViewModels.Dialogs
 
         public override string Title => "Notification";
         
-        public ReactivePropertySlim<string> Message = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string> Message { get; } = new ReactivePropertySlim<string>();
 
         #endregion
 
@@ -39,9 +39,8 @@ namespace Stocker.Wpf.ViewModels.Dialogs
 
         protected override async void OnLoaded()
         {
-            ButtonResult result = ButtonResult.No;
             await Task.Delay(2000);
-            RequestCloseInvoke(new DialogResult(result));
+            RequestCloseInvoke(new DialogResult(ButtonResult.No));
         }
 
         public override void OnDialogOpened(IDialogParameters parameters)

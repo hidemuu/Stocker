@@ -1,4 +1,5 @@
-﻿using Mov.WpfControls.ViewModels;
+﻿using Mov.Authorizer.Models;
+using Mov.WpfControls.ViewModels;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -16,23 +17,25 @@ using System.Windows.Controls;
 
 namespace Stocker.Wpf.ViewModels.Login
 {
-    public class CreateAccountViewModel : RegionViewModelBase
+    public class CreateAccountViewModel : RegionViewModelBase, IConfirmNavigationRequest
     {
         #region フィールド;
 
-        public ReactivePropertySlim<string> RegisteredLoginId = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string> RegisteredLoginId { get; } = new ReactivePropertySlim<string>();
 
         public bool IsUseRequest { get; set; }
+
+        private readonly IAuthorizerRepository authorizerRepository;
 
         #endregion
 
         #region コマンド
 
-        public ReactiveCommand LoginMainContentCommand = new ReactiveCommand();
+        public ReactiveCommand LoginMainContentCommand { get; } = new ReactiveCommand();
 
-        public ReactiveCommand GoBackCommand = new ReactiveCommand();
+        public ReactiveCommand GoBackCommand { get; } = new ReactiveCommand();
 
-        public ReactiveCommand<object> VerityCommand = new ReactiveCommand<object>();
+        public ReactiveCommand<object> VerityCommand { get; } = new ReactiveCommand<object>();
 
         #endregion
 
@@ -41,26 +44,27 @@ namespace Stocker.Wpf.ViewModels.Login
         /// </summary>
         /// <param name="regionManager"></param>
         /// <param name="dialogService"></param>
-        public CreateAccountViewModel(IRegionManager regionManager, IDialogService dialogService) : base(regionManager, dialogService)
+        public CreateAccountViewModel(IRegionManager regionManager, IDialogService dialogService, IAuthorizerRepository authorizerRepository) : base(regionManager, dialogService)
         {
-            LoginMainContentCommand.Subscribe(OnLoginMainContentCommand).AddTo(Disposables);
-            GoBackCommand.Subscribe(OnGoBackCommand).AddTo(Disposables);
-            VerityCommand.Subscribe(OnVerityCommand).AddTo(Disposables);
+            this.authorizerRepository = authorizerRepository;
+            LoginMainContentCommand.Subscribe(OnLoginMainContent).AddTo(Disposables);
+            GoBackCommand.Subscribe(OnGoBack).AddTo(Disposables);
+            VerityCommand.Subscribe(OnVerity).AddTo(Disposables);
         }
 
         #region メソッド
 
-        void OnGoBackCommand()
+        void OnGoBack()
         {
             Journal.GoBack();
         }
 
-        void OnLoginMainContentCommand()
+        void OnLoginMainContent()
         {
-            Navigate("LoginMainContent");
+            RegionManager.RequestNavigate(RegionNames.MAIN, "LoginMainContent");
         }
 
-        void OnVerityCommand(object parameter)
+        void OnVerity(object parameter)
         {
             if (!VerityRegister(parameter))
             {
@@ -106,16 +110,6 @@ namespace Stocker.Wpf.ViewModels.Login
             return true;
         }
 
-        #endregion
-
-        #region ナビゲーションメソッド
-
-        private void Navigate(string navigatePath)
-        {
-            if (navigatePath != null)
-                RegionManager.RequestNavigate(RegionNames.LOGIN, navigatePath);
-        }
-
         public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
         {
             if (!string.IsNullOrEmpty(RegisteredLoginId.Value) && this.IsUseRequest)
@@ -127,7 +121,24 @@ namespace Stocker.Wpf.ViewModels.Login
                 });
             }
             continuationCallback(true);
-            
+
+        }
+
+        #endregion
+
+        #region ナビゲーションメソッド
+
+        public override void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+            base.OnNavigatedFrom(navigationContext);
+            navigationContext.Parameters.Add("loginId", RegisteredLoginId);
+
+        }
+
+        public override void OnNavigatedTo(NavigationContext navigationContext)
+        {
+            base.OnNavigatedTo(navigationContext);
+
         }
 
         #endregion

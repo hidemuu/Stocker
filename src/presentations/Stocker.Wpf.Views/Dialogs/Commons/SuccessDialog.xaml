@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:Stocker.Wpf.Views.Dialogs"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
-    Width="200"
+    Width="350"
     Height="150"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">

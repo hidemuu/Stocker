@@ -13,6 +13,15 @@
     Height="600"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/BaseStyles.xaml" />
+                <ResourceDictionary Source="/Mov.WpfDesigns;component/Styles/ComponentStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <converters:BoolToVisibillityConverter x:Key="boolToVisibillityConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
     <behaviors:Interaction.Triggers>
         <behaviors:EventTrigger EventName="Loaded">
             <behaviors:InvokeCommandAction Command="{Binding LoadedCommand}" />
@@ -27,9 +36,66 @@
         </Style>
     </prism:Dialog.WindowStyle>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
         <ContentControl
+            Grid.Row="0"
             Margin="5"
             prism:RegionManager.RegionManager="{Binding RegionManager}"
-            prism:RegionManager.RegionName="{x:Static constants:RegionNames.LOGIN}" />
+            prism:RegionManager.RegionName="{x:Static constants:RegionNames.MAIN}" />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Button
+                Grid.Row="0"
+                Height="50"
+                Margin="20,0,20,0"
+                VerticalAlignment="Top"
+                BorderBrush="Black"
+                Command="{Binding ApplyCommand}"
+                CommandParameter="{Binding ElementName=password}"
+                Content="{Binding ApplyContent.Value}"
+                FontSize="15"
+                Foreground="#DAD9FF"
+                Style="{StaticResource LoginButton}" />
+            <Grid Grid.Row="1"  Margin="0,15" VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Foreground="#DFE2E3"
+                    Text="{Binding ChangeContentGuide.Value}" />
+                <TextBlock
+                    Grid.Column="1"
+                    Margin="5,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="#4F5156"
+                    Text="{Binding ChangeContent.Value}">
+                    <behaviors:Interaction.Triggers>
+                        <behaviors:EventTrigger EventName="MouseLeftButtonDown">
+                            <behaviors:InvokeCommandAction Command="{Binding ChangeContentCommand}" />
+                        </behaviors:EventTrigger>
+                    </behaviors:Interaction.Triggers>
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#F9F9F9" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>

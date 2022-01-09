@@ -23,18 +23,19 @@ namespace Stocker.Wpf.ViewModels.Login
     {
         #region フィールド
 
-        public ReactivePropertySlim<bool> IsCanExcute = new ReactivePropertySlim<bool>();
+        public ReactivePropertySlim<bool> IsCanExcute { get; } = new ReactivePropertySlim<bool>();
         
-        public ReactivePropertySlim<User> CurrentUser = new ReactivePropertySlim<User>();
+        public ReactivePropertySlim<User> CurrentUser { get; } = new ReactivePropertySlim<User>();
 
+        private readonly IAuthorizerRepository authorizerRepository;
 
         #endregion
 
         #region コマンド
 
-        public ReactiveCommand CreateAccountCommand = new ReactiveCommand();
+        public ReactiveCommand CreateAccountCommand { get; } = new ReactiveCommand();
             
-        public ReactiveCommand GoForwardCommand = new ReactiveCommand();
+        public ReactiveCommand GoForwardCommand { get; } = new ReactiveCommand();
         
         private DelegateCommand<PasswordBox> _loginCommand;
         public DelegateCommand<PasswordBox> LoginCommand =>
@@ -47,8 +48,9 @@ namespace Stocker.Wpf.ViewModels.Login
         /// </summary>
         /// <param name="regionManager"></param>
         /// <param name="dialogService"></param>
-        public LoginMainContentViewModel(IRegionManager regionManager, IDialogService dialogService) : base(regionManager, dialogService)
+        public LoginMainContentViewModel(IRegionManager regionManager, IDialogService dialogService, IAuthorizerRepository authorizerRepository) : base(regionManager, dialogService)
         {
+            this.authorizerRepository = authorizerRepository;
             CreateAccountCommand.Subscribe(OnCreateAccountCommand).AddTo(Disposables);
             GoForwardCommand.Subscribe(OnGoForwardCommand).AddTo(Disposables);
         }
@@ -58,7 +60,7 @@ namespace Stocker.Wpf.ViewModels.Login
 
         void OnCreateAccountCommand()
         {
-            Navigate("CreateAccount");
+            RegionManager.RequestNavigate(RegionNames.MAIN, "CreateAccount");
         }
         void OnLoginCommand(PasswordBox passwordBox)
         {
@@ -77,12 +79,11 @@ namespace Stocker.Wpf.ViewModels.Login
                 DialogService.Show("WarningDialog", new DialogParameters($"message={"Passwordを入力して下さい!"}"), null);
                 return;
             }
-            //else if (Global.AllUsers.Where(t => t.LoginId == this.CurrentUser.LoginId && t.Password == this.CurrentUser.Password).Count() == 0)
-            //{
-            //    dialogService.Show("WarningDialog", new DialogParameters($"message={"LoginIdかPasswordが一致しません!"}"), null);
-            //    return;
-            //}
-            //ShellSwitcher.Switch<LoginWindow, MainWindow>();
+            else if (authorizerRepository.Users.Gets().Where(t => t.LoginId == this.CurrentUser.Value.LoginId && t.Password == this.CurrentUser.Value.Password).Count() == 0)
+            {
+                DialogService.Show("WarningDialog", new DialogParameters($"message={"LoginIdかPasswordが一致しません!"}"), null);
+                return;
+            }
         }
 
         private void OnGoForwardCommand()
@@ -90,25 +91,22 @@ namespace Stocker.Wpf.ViewModels.Login
             Journal.GoForward();
         }
 
-        #endregion
-
-        #region ナビゲーションメソッド
-
-        private void Navigate(string navigatePath)
-        {
-            if (navigatePath != null)
-                RegionManager.RequestNavigate(RegionNames.LOGIN, navigatePath);
-        }
-
-
-
         private bool CanExecuteGoForwardCommand(PasswordBox passwordBox)
         {
             this.IsCanExcute.Value = Journal != null && Journal.CanGoForward;
             return true;
         }
 
-        
+
+        #endregion
+
+        #region ナビゲーションメソッド
+
+        public override void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+            base.OnNavigatedFrom(navigationContext);
+            navigationContext.Parameters.Add("loginTest", "test");
+        }
 
         public override void OnNavigatedTo(NavigationContext navigationContext)
         {

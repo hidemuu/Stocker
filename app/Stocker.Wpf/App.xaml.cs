@@ -22,6 +22,7 @@ using Stocker.Wpf.ViewModels.Panels;
 using Stocker.Wpf.ViewModels.Panels.Contents;
 using Stocker.Wpf.Views;
 using Stocker.Wpf.Views.Dialogs;
+using Stocker.Wpf.Views.Dialogs.Logins.Contents;
 using Stocker.Wpf.Views.Login;
 using Stocker.Wpf.Views.Panels;
 using Stocker.Wpf.Views.Panels.Contents;
@@ -66,6 +67,7 @@ namespace Stocker.Wpf
             //containerRegistry.RegisterInstance<IGameService>(Container.Resolve<GameService>());
 
             //Viewの登録
+            containerRegistry.RegisterForNavigation<NoContent>();
             containerRegistry.RegisterForNavigation<LoginMainContent>();
             containerRegistry.RegisterForNavigation<CreateAccount>();
             containerRegistry.RegisterForNavigation<DashboardView>();
@@ -98,6 +100,7 @@ namespace Stocker.Wpf
             base.ConfigureViewModelLocator();
 
             ViewModelLocationProvider.Register<LoginMainContent, LoginMainContentViewModel>();
+            ViewModelLocationProvider.Register<CreateAccount, CreateAccountViewModel>();
             ViewModelLocationProvider.Register<MainWindow, MainWindowViewModel>();
             ViewModelLocationProvider.Register<DashboardView, DashboardViewModel>();
             ViewModelLocationProvider.Register<MenuView, MenuViewModel>();
