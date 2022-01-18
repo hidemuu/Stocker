@@ -1,7 +1,7 @@
 ﻿using Mov.Authorizer.Models;
 using Mov.Configurator.Models;
 using Mov.Translator.Models;
-using Mov.WpfControls.ViewModels;
+using Mov.WpfViewModels;
 using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
 using Stocker.Models;

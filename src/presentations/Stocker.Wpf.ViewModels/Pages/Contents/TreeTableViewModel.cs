@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Mov.WpfControls.ViewModels;
+using Mov.WpfViewModels;
 
 namespace Stocker.Wpf.ViewModels.Panels
 {

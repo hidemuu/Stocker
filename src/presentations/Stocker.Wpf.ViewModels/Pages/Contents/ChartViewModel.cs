@@ -1,6 +1,6 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
-using Mov.WpfControls.ViewModels;
+using Mov.WpfViewModels;
 using Reactive.Bindings;
 using Stocker.Models;
 using Stocker.Wpf.Models.Tables;

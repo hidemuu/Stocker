@@ -30,8 +30,6 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Stocker.Models.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Mov.Utilities.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Mov.Accessors.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Prism.Wpf.dll
-C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Prism.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\CsvHelper.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Stocker.Models.pdb
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.Models\bin\Debug\net5.0-windows\Mov.Authorizer.Models.pdb

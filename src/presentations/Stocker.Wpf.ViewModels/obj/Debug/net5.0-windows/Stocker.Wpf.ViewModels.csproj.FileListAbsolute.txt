@@ -34,3 +34,5 @@ C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels\obj\Debug\net5.0-windows\Stocker.Wpf.ViewModels.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels\obj\Debug\net5.0-windows\ref\Stocker.Wpf.ViewModels.dll
 C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels\obj\Debug\net5.0-windows\Stocker.Wpf.ViewModels.pdb
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels\bin\Debug\net5.0-windows\Mov.WpfViewModels.dll
+C:\Users\nando\Documents\GitHub\Stocker\src\presentations\Stocker.Wpf.ViewModels\bin\Debug\net5.0-windows\Mov.WpfViewModels.pdb

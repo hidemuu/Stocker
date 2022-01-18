@@ -35,6 +35,9 @@
     <Reference Include="Mov.WpfDesigns">
       <HintPath>..\..\..\..\mov\app\wpf\bin\Debug\net5.0-windows\Mov.WpfDesigns.dll</HintPath>
     </Reference>
+    <Reference Include="Mov.WpfViewModels">
+      <HintPath>..\..\..\..\mov\lib\wpflib\bin\Debug\net5.0-windows\Mov.WpfViewModels.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

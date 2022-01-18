@@ -130,3 +130,5 @@ C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\obj\Debug\net5.0-windows
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\obj\Debug\net5.0-windows\ref\Stocker.Wpf.dll
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\obj\Debug\net5.0-windows\Stocker.Wpf.pdb
 C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\obj\Debug\net5.0-windows\Stocker.Wpf.genruntimeconfig.cache
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.WpfViewModels.dll
+C:\Users\nando\Documents\GitHub\Stocker\app\Stocker.Wpf\bin\Debug\net5.0-windows\Mov.WpfViewModels.pdb

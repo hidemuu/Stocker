@@ -1,6 +1,6 @@
 ﻿using MaterialDesignColors;
-using Mov.WpfControls.ViewModels;
 using Mov.WpfDesigns.Services;
+using Mov.WpfViewModels;
 using Prism.Mvvm;
 using Reactive.Bindings;
 using Stocker.Wpf.Models;

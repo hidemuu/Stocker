@@ -7,8 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Mov.WpfControls.Helpers;
 using Prism.Services.Dialogs;
-using Mov.WpfControls.ViewModels;
 using Reactive.Bindings.Extensions;
+using Mov.WpfViewModels;
 
 namespace Stocker.Wpf.ViewModels.Panels
 {

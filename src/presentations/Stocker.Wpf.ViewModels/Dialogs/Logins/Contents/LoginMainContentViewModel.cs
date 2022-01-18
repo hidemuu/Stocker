@@ -14,8 +14,8 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using Mov.Authorizer.Models;
 using Reactive.Bindings;
-using Mov.WpfControls.ViewModels;
 using Reactive.Bindings.Extensions;
+using Mov.WpfViewModels;
 
 namespace Stocker.Wpf.ViewModels.Login
 {

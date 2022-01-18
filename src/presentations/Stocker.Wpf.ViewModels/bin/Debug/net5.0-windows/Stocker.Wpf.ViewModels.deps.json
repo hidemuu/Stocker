@@ -16,7 +16,8 @@
           "Mov.Scheduler.Models": "1.0.0.0",
           "Mov.Translator.Models": "1.0.0.0",
           "Mov.WpfControls": "1.0.0.0",
-          "Mov.WpfDesigns": "1.0.0.0"
+          "Mov.WpfDesigns": "1.0.0.0",
+          "Mov.WpfViewModels": "1.0.0.0"
         },
         "runtime": {
           "Stocker.Wpf.ViewModels.dll": {}
@@ -287,6 +288,14 @@
           }
         }
       },
+      "Mov.WpfViewModels/1.0.0.0": {
+        "runtime": {
+          "Mov.WpfViewModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Mov.Utilities/1.0.0.0": {
         "runtime": {
           "Mov.Utilities.dll": {
@@ -514,6 +523,11 @@
       "sha512": ""
     },
     "Mov.WpfDesigns/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mov.WpfViewModels/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

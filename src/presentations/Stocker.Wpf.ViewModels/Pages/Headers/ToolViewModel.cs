@@ -1,4 +1,4 @@
-﻿using Mov.WpfControls.ViewModels;
+﻿using Mov.WpfViewModels;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;

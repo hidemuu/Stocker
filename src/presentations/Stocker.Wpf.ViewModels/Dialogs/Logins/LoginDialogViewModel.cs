@@ -1,5 +1,5 @@
 ﻿using Mov.Authorizer.Models;
-using Mov.WpfControls.ViewModels;
+using Mov.WpfViewModels;
 using Prism.Regions;
 using Prism.Services.Dialogs;
 using Reactive.Bindings;
